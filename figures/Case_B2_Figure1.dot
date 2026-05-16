@@ -1,0 +1,52 @@
+digraph B2_Figure1 {
+    label="Figure 1. Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations";
+    labelloc="t";
+    labeljust="l";
+    rankdir=LR;
+    node [shape=box, fontsize=10];
+
+    S17_L [label="S17\nLCD Live View\nDisplay 1"];
+    S17_R [label="S17\nLCD Live View\nDisplay 1"];
+    S8  [label="S8\nEVF Live View\nLCD off"];
+    S21   [label="S21\nDisplay 5 = Info\nLCD docked"];
+    S7    [label="S7\nInfo persists\nLCD docked"];
+    S6    [label="S6\nInfo persists\nLCD open"];
+    S1    [label="S1\nLCD Live View\nDisplay 1"];
+    S35_L [label="S35\nPicture Review\nEVF"];
+    S35_R [label="S35\nPicture Review\nEVF"];
+
+    subgraph cluster_normal {
+        label="Normal Route";
+        color="darkgreen";
+        S17_L -> S8  [label="look into EVF", color="green", penwidth=2];
+        S8  -> S35_L [label="shooting", color="green", penwidth=2];
+        S35_L -> S17_R [label="picture review end", color="green", penwidth=2];
+    }
+
+    subgraph cluster_persistent {
+        label="Persistent Route";
+        color="red";
+        S17_L -> S21   [xlabel="DISP\n→ Display 5", color="orange", penwidth=2];
+        S21   -> S7    [label="power cycle", color="red", penwidth=2];
+        S7    -> S35_R [label="shooting", color="orange", penwidth=2];
+        S35_R -> S7    [label="picture review end", color="red", penwidth=2];
+    }
+
+    subgraph cluster_recovery {
+        label="Recovery";
+        color="blue";
+        S7 -> S6    [xlabel="open LCD", color="blue", penwidth=2];
+        S6 -> S1    [label="DISP", color="blue", penwidth=2];
+        S1 -> S17_R [xlabel="close LCD", color="blue", penwidth=2];
+    }
+
+    subgraph cluster_legend {
+        label="Legend";
+        fontsize=10;
+        color="gray";
+key_expected [label="green: expected operational flow", shape=plaintext]
+key_persist_transition [label="orange: transition related to Info persistence", shape=plaintext]
+key_persist_state [label="red: persistent Info state retained", shape=plaintext]
+key_recovery [label="blue: recovery flow", shape=plaintext]
+    }
+}
