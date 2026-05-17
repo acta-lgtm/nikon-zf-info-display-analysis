@@ -77,7 +77,7 @@ Additional documentation is currently in preparation.
 ## 4. Visual Appendix
 - [Video / GIF Resources](./docs/media.md) : Work in progress
 - [Extra Visualization (Concept Map)](./case-a1-concept-map-cat.svg)
-　- [Download PDF version](./case-a1-concept-map-cat.pdf)
+　- [Download PDF version](./case-a1-concept-map-cat.pdf?raw=true)
 
 ---
 
