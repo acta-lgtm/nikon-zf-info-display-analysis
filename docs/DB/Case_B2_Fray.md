@@ -20,9 +20,9 @@
 
 ### Figure 1: Persistence and Recovery Flow
 
-![Figure 1: Persistence and Recovery Flow of Display 5](.../figures/Case_B2_Figure1.svg)
+![Figure 1: Persistence and Recovery Flow of Display 5](figures/Case_B2_Figure1.svg)
 
-Source: [`Case_B2_Figure1.dot`](.../figures/Case_B2_Figure1.dot)
+Source: [`Case_B2_Figure1.dot`](figures/Case_B2_Figure1.dot)
 
 ---
 
