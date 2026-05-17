@@ -60,7 +60,7 @@ Source: [`Case_B2_Figure1.dot`](../../figures/Case_B2_Figure1.dot)
 > **Context D** represents a temporary display-routing condition in which Live View is assigned to the EVF and the LCD monitor becomes inactive due to EVF-priority behavior. Under this condition, previously observed Info persistence behavior was not maintained while Live View routing remained EVF-active.
 
 ### Assessment Codes
-> For details on the evaluation ratings (E / N / M), please refer to the [Assessment Codes](./README.md#assessment-codes) in the main README.
+> For details on the evaluation ratings (E / N / M), please refer to the [Assessment Codes](../README.md#assessment-codes) in the main README.
 
 
 ---
