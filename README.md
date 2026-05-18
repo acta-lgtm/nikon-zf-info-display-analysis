@@ -37,13 +37,6 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 - **Device:** Nikon Z f
 - **Firmware:** [ C: Ver. 3.01 ]
 
-### 1.4 Video documentation in preparation.
-
-Video documentation is currently in preparation.
-
-Independent reproduction attempts on other Nikon Z f units
-are welcome.
-
 ---
 
 ## 2. Structure of Data 
