@@ -75,7 +75,8 @@ Additional documentation is currently in preparation.
 ---
 
 ## 4. Visual Appendix
-- [Video / GIF Resources](./docs/media.md) : Work in progress
+- [![Reference Video for Case B2](https://www.youtube.com/watch?v=Linzjau-Ucg)](https://www.youtube.com/watch?v=Linzjau-Ucg)
+*Note: This video does not completely reproduce the steps for Case B2.*
 - [Extra Visualization (Concept Map)](./case-a1-concept-map-cat.svg)
 　- [Download PDF version](https://github.com/acta-lgtm/nikon-zf-info-display-analysis/releases/download/pdf/case-a1-concept-map-cat.pdf)
 
