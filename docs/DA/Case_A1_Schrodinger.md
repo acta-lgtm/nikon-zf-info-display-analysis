@@ -11,6 +11,7 @@
 | 1.5  | 2026-05-04 | Added State S17, 18. Introduced the "Next State" column to all steps to better visualize unexpected state transitions and provide a more rigorous tracking of the Sisyphean loop. Refined the state definitions in the state transition table.
 | 1.6  | 2026-05-14 |  Refined operational assessment criteria (E/N/M) and added display-control context definitions to distinguish user-observable behavior from inferred display-control consistency. 
 | 1.7  | 2026-05-19 | Added Operational Notes. 
+| 1.8  | 2026-05-20 | Partial correction of the table. 
 
 ---
 
@@ -177,16 +178,16 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 | 76   | S0            | Open LCD monitor                                              | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 77   | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 78   | S0            | Press [i] button; wait 1 s                                    | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 79   | S4            | Open LCD monitor; wait 1 s                                    | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 80   | S6            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
+| 79   | S4            | Open LCD monitor; wait 1 s                                    | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
+| 80   | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 81   | S6            | Press the DISP button                                         | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 82   | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 83   | S0            | Power off; wait 3 s, then turn on and wait 10 s               | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 84   | S0            | Open LCD monitor                                              | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 85   | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 86   | S0            | Press [i] button; wait 10 s                                   | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 87   | S4            | Open LCD monitor; wait 10 s                                   | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 88   | S6            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
+| 87   | S4            | Open LCD monitor; wait 10 s                                   | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
+| 88   | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 89   | S6            | Press the DISP button                                         | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 90   | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 91   | S0            | Power off; wait 3 s, then turn on and wait 10 s               | S0         | No display                                  | Off                 |   E    | E / N / M |
@@ -194,8 +195,8 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 | 93   | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 94   | S0            |In [CUSTOM SETTINGS MENU] > [c3 Power off delay], set Standby timer to 10 s, then exit | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 95   | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 96   | S4            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 97   | S6            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
+| 96   | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
+| 97   | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 98   | S6            | Wait until the standby timer activates and <br> the LCD goes dark , then wait another 1 s                     | S14        | No display                                  | Off                 |   E   | E / N / M |
 | 99   | S14           | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 100  | S6            | Press the DISP button                                         | S1         | Live View display                           | Off                 |   E    | E / N / M |
@@ -204,7 +205,7 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 | 103  | S0            | Open LCD monitor                                              | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 104  | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 105  | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 106  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 | **N**  | E / N / M |
+| 106  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 107  | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 108  | S6            | Wait until the standby timer activates and <br> the LCD goes dark , then wait another 1 s                     | S14        | No display                                  | Off                 |   E    | E / N / M |
 | 109   | S14          | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
@@ -214,8 +215,8 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 | 113  | S0            | Open LCD monitor                                              | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 114  | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 115  | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 116  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 | **N**  | E / N / M |
-| 117   | S5           | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
+| 116  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
+| 117  | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 118  | S6            | Wait until the standby timer activates and <br> the LCD goes dark , then wait another 10 s                     | S14        | No display                                  | Off                 |   E    | E / N / M |
 | 119  | S14           | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 120  | S6            | Press the DISP button                                         | S1         | Live View display                           | Off                 |   E    | E / N / M |
@@ -224,7 +225,7 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 | 123  | S0            | Open LCD monitor                                              | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 124  | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 125  | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 126  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 | **N**  | E / N / M |
+| 126  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 127  | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 128  | S6            | Half-press the shutter button as soon as the LCD is fully dark| S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 129  | S6            | Press the DISP button                                         | S1         | Live View display                           | Off                 |   E    | E / N / M |
@@ -234,7 +235,7 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 | 133  | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 134  | S0            |In [CUSTOM SETTINGS MENU] > [c3 Power off delay], set Standby timer to No limit, then exit | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 135  | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 136  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 | **N**  | E / N / M |
+| 136  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 137  | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 138  | S6            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 139  | S0            | Power off                                                     | S0         | No display                                  | Off                 |   E    | E / N / M |
@@ -246,10 +247,10 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 | 145  | S0            | Power off                                                     | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 146  | S0            | Reinsert the memory card; no specific timing is required      | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 147  | S0            | Power on;wait 10 s                                            | S0         | No display                                  | Off                 |   E    | E / N / M |
-| 148  | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
+| 148  | S0            | Open LCD monitor                                              | S1         | Live View display                           | Off                 |   E    | E / N / M |
 | 149  | S1            | Close LCD monitor                                             | S0         | No display                                  | Off                 |   E    | E / N / M |
 | 150  | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
-| 151  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 | **N**  | E / N / M |
+| 151  | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 152  | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 153  | S6            | Press the shutter button all the way down to capture an image; no specific timing is required  | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 154  | S6            | Press playback button                                         | S11        | Images stored on the memory card displayed  | Off                 |   E    | E / N / M |
