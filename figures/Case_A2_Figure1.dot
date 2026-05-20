@@ -1,0 +1,86 @@
+digraph A2_Figure1 {
+label="Figure A2-1. Case A2: Immediate Info Persistence from Default Configuration";
+    labelloc="t";
+    labeljust="l";
+    rankdir=LR;
+    node [shape=box, fontsize=10];
+    
+    S17  [label="S17\nLive View\nLCD docked"];
+        S8   [label="S8\nEVF Live View"];
+    S0   [label="S0\nPower Off"];
+
+ //    S17L [label="S17\nLCD Live View"];
+ //    S17R [label="S17\nLCD Live View"];
+     S6   [label="S6\nInfo persists\nLCD open"];  // First position
+    S7   [label="S7\nInfo persists\nLCD docked"]; // Second position
+
+
+    subgraph cluster_persistent {
+        label="Persistent Loop (Info fixed)";
+        color="red";
+        S17;
+        S7;
+        S6; S8;
+
+
+        S6 -> S7 [label="close LCD", color="red", penwidth=2]; // Adjust edge
+        S7 -> S6 [label="open LCD", color="red", penwidth=2]; // Adjust edge
+        S6 -> S6 [label="half-press / DISP", color="red", penwidth=2];
+
+        S17 -> S7 [label="DISP→Info", color="orange", penwidth=2];
+        S7 -> S7 [label="power cycle / half-press", color="red", penwidth=2];
+        S7 -> S8 [label="eye sensor", color="orange", penwidth=2];
+        S8 -> S7 [label="eye away", color="red", penwidth=2];
+        
+
+
+    }
+
+
+    subgraph cluster_normal {
+        label="Normal Route";
+        color="darkgreen";
+
+
+        S0   -> S17 [label="power on/off", color="green", penwidth=2];
+        S17 -> S8   [label="eye sensor", color="green", penwidth=2];
+        S8   -> S17 [label="eye away", color="green", penwidth=2];
+        S17 -> S0   [label="", color="green", penwidth=2];
+    }
+
+           {rank=same; S8;S0} // Ensure the same rank positioning
+            
+                                S17 -> S8 [style=invis, weight=50];
+               
+            
+
+    subgraph cluster_recovery {
+        label="Recovery";
+        color="blue";
+         S7 -> S17 [label="DISP", color="blue", penwidth=2];
+
+ 
+
+    }
+
+    subgraph cluster_reset {
+        label="Hard Reset";
+        color="purple";
+S0 -> S7 [xlabel="power on", color="red", penwidth=2];
+        S7 -> S0 [xlabel="battery removal", color="purple", penwidth=2];
+                 
+
+    }
+
+    subgraph cluster_legend {
+        label="Legend";
+        fontsize=10;
+        color="gray";
+
+        key1 [label="green: expected flow", shape=plaintext];
+        key2 [label="orange: transition into persistence", shape=plaintext];
+        key3 [label="red: persistent state loop", shape=plaintext];
+        key4 [label="blue: recovery to normal", shape=plaintext];
+        key5 [label="purple: hardware reset path", shape=plaintext];
+    }
+}
