@@ -37,6 +37,16 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 - **Device:** Nikon Z f
 - **Firmware:** [ C: Ver. 3.01 ]
 
+### 1.4 Notes on the Observation Process
+
+The cases in this repository were developed chronologically through observation, rather than from a predefined state model.
+
+Over time, these observations revealed inconsistencies, hidden dependencies, and visually identical states exhibiting different operational behaviors. Consequently, state definitions and transition interpretations evolved throughout the investigation process.
+
+For this reason, earlier tables intentionally preserve the original coarse-grained observations, including ambiguities and apparent inconsistencies that later motivated finer-grained analyses.
+
+Ultimately, this repository is not merely a collection of transition tables, but also a chronological observational record documenting how the underlying display-state structure gradually became visible.
+
 ---
 
 ## 2. Structure of Data 
