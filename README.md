@@ -49,14 +49,18 @@ The following case documentation is currently available:
 
 Additional documentation is currently in preparation.
 
-### Phase 1: Definition A (Coarse-grained)
-- [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md): Work in progress
+## Phase 1: Definition A (Coarse-grained)
+- [DA README](./docs/DA/README.md)
+- [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md): Initial observational archive published
 - [**Case A2:** Deterministic Loop: Immediate Transition from Default Settings](./docs/DA/Case_A2_Deterministic.md): Work in progress
 
 ### Phase 2: Definition B (Fine-grained)
+- [DB README](./docs/DB/README.md)
 - [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md): Work in progress
 - [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)
 - [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md): Work in progress
+
+
 
 
 
