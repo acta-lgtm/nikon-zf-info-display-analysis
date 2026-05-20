@@ -19,9 +19,9 @@
 *   **Core Issue:**
     During shooting—especially during continuous burst—the Info display can remain persistently on the LCD, demonstrating that the information overlay logic functions independently of real-time image capture states.
 
-### Figure 1: Persistence and Recovery Flow
+### Figure B2-1
 
-![Figure 1: Persistence and Recovery Flow of Display 5](../../figures/Case_B2_Figure1.svg)
+![Figure B2-1: Persistence and Recovery Flow of Display 5](../../figures/Case_B2_Figure1.svg)
 
 Source: [`Case_B2_Figure1.dot`](../../figures/Case_B2_Figure1.dot)
 
