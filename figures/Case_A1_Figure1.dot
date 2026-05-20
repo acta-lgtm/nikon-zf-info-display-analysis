@@ -1,0 +1,64 @@
+digraph A1_Figure1 {
+	label="Figure A1-1. Case A1: Persistent Info-Display Loop (Primary)";
+    labelloc="t";
+    labeljust="l";
+    rankdir=LR;
+    node [shape=box, fontsize=10];
+
+    S0  [label="S0\nNo display\nLCD docked"];
+    S1    [label="S1\nLive View\nLCD open"];
+    S4    [label="S4\nInfo + i-menu\nLCD docked"];
+    S5    [label="S5\nInfo + i-menu\nLCD open"];
+    S6    [label="S6\nInfo persists\nLCD open"];
+    S7    [label="S7\nInfo persists\nLCD docked"];
+    S8    [label="S8\nEVF Live View\nLCD off"];
+
+
+
+    subgraph cluster_normal {
+        label="Normal Route";
+        color="darkgreen";
+
+        S0;
+        S1;
+        S4;
+
+        S0 -> S1 [style=invis, weight=50];
+        S0 -> S1 [label="open LCD", color="green", penwidth=2];
+        S1 -> S0 [label="close LCD", color="green", penwidth=2];
+        S0 -> S4 [label="press [i]", color="green", penwidth=2];
+    }
+
+        
+    subgraph cluster_persistent {
+        label="Persistent Route";
+        color="red";
+
+        S4 -> S5 [label="open LCD", color="orange", penwidth=2];
+        S5 -> S6 [label="half-press", color="red", penwidth=2];
+        S6 -> S7 [label="close LCD", color="red", penwidth=2];
+        S7 -> S6 [label="open LCD", color="red", penwidth=2];
+        S7 -> S8 [label="eye sensor", color="orange", penwidth=2];
+        S8 -> S0 [xlabel="eye away", color="orange", penwidth=2, labeldistance=0.7];
+        S0 -> S6 [label="open LCD", color="red", penwidth=2];
+        S6 -> S6 [label="half-press", color="red", penwidth=2];
+    }
+
+    subgraph cluster_recovery {
+        label="Recovery";
+        color="blue";
+
+        S6 -> S1 [xlabel="DISP", color="blue", penwidth=2];
+    }
+
+    subgraph cluster_legend {
+        label="Legend";
+        fontsize=10;
+        color="gray";
+
+        key_expected [label="green: normal display flow", shape=plaintext];
+        key_persist_transition [label="orange: transition related to persistence", shape=plaintext];
+        key_persist_state [label="red: persistent Info state retained", shape=plaintext];
+        key_recovery [label="blue: recovery path", shape=plaintext];
+    }
+}

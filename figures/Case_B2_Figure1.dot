@@ -1,5 +1,5 @@
 digraph B2_Figure1 {
-    label="Figure 1. Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations";
+    label="Figure B2-1. Case B2: Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations";
     labelloc="t";
     labeljust="l";
     rankdir=LR;

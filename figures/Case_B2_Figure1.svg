@@ -2,7 +2,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 588.8)">
 <title>B2_Figure1</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-588.8 976.23,-588.8 976.23,4 -4,4"/>
-<text xml:space="preserve" text-anchor="middle" x="269.1" y="-568.2" font-family="Times,serif" font-size="14.00">Figure 1. Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations</text>
+<text xml:space="preserve" text-anchor="middle" x="306.82" y="-568.2" font-family="Times,serif" font-size="14.00">Figure B2-1. Case B2: Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations</text>
 <g id="clust1" class="cluster">
 <title>cluster_normal</title>
 <polygon fill="none" stroke="darkgreen" points="63.67,-225 63.67,-310 816.9,-310 816.9,-225 63.67,-225"/>
