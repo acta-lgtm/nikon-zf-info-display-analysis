@@ -37,13 +37,13 @@ During ongoing observation, it became evident that the "Info display" and the "I
   LCD monitor open (less than 180 degrees) \
   Info displayed on the LCD monitor \
   EVF off \
-  (Note: Visually indistinguishable from S25; S6 is specifically defined for states reached by means other than the DISP button.)
+  (Note: Visually indistinguishable from S25 and S38. S6 is specifically defined for non-DISP operational transitions that are not yet classified as persistent fixation states.)
 
 - State S7 \
   LCD monitor docked \
   Info displayed on the LCD monitor \
   EVF off \
-  (Note: Visually indistinguishable from S21; S7 is specifically defined for states reached by means other than the DISP button.)
+  (Note: Visually indistinguishable from S21 and S37. S7 is specifically defined for non-DISP operational transitions that are not yet classified as persistent fixation states.)
 
 - State S8 \
   LCD monitor docked \
@@ -114,7 +114,7 @@ During ongoing observation, it became evident that the "Info display" and the "I
   LCD monitor docked \
   Display 5 = Info display displayed on the LCD monitor \
   EVF off \
-  (Note: Visually indistinguishable from S7; S21 is specifically defined for states reached via the DISP button.)
+  (Note: Visually indistinguishable from S7 and S37. S21 is specifically defined for states explicitly reached via the DISP button.)
 
 - State S22 \
   LCD monitor open (less than 180 degrees) \
@@ -135,7 +135,7 @@ During ongoing observation, it became evident that the "Info display" and the "I
   LCD monitor open (less than 180 degrees) \
   Display 5 = Info display displayed on the LCD monitor \
   EVF off \
-  (Note: Visually indistinguishable from S6; S25 is specifically defined for states reached via the DISP button.)
+  (Note: Visually indistinguishable from S6 and S38. S25 is specifically defined for states explicitly reached via the DISP button.)
 
 - State S26 \
   LCD monitor docked \
@@ -194,6 +194,18 @@ During ongoing observation, it became evident that the "Info display" and the "I
   Picture Review displayed on the LCD monitor \
   EVF off
 
+- State S37 \
+  LCD monitor docked \
+  Info display persistently fixed on the LCD monitor \
+  EVF off \
+  (Note: Visually indistinguishable from S7 and S21. S37 is specifically defined for persistent fixation states observed after the Info display reappears or remains after interruption, regardless of the original entry route.)
+
+- State S38 \
+  LCD monitor open (less than 180 degrees) \
+  Info display persistently fixed on the LCD monitor \
+  EVF off \
+  (Note: Visually indistinguishable from S6 and S25. S38 is specifically defined for persistent fixation states observed after the Info display reappears or remains after interruption, regardless of the original entry route.)
+
 ---
 
 ## 2. Analyzed Cases
@@ -217,3 +229,6 @@ Observation of how monitor routing conditions and LCD activity influence Info-di
 ## 3. Methodology
 - **Visualization Tool:** Graphviz (dot)
 - **Recording Methodology:** Generation of state transition tables based on empirical operation logs and repetitive stress testing to detect micro-transitions and internal flag mismatches.
+
+
+
