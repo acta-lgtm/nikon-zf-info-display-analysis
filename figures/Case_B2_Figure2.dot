@@ -40,7 +40,7 @@ subgraph cluster_normal {
 
     S17_L -> S8  [label="look into EVF", color="green", penwidth=2];
     S8     -> S35 [xlabel="shoot", color="green", penwidth=2];
-    S35    -> S36 [label="eye away", color="green", penwidth=2];
+    
     S36    -> S17_R [label="review end", color="green", penwidth=2];
     S17_L -> S21 [label="DISP → Info", color="orange", penwidth=2];
     
@@ -60,9 +60,9 @@ subgraph cluster_info {
     S37 -> S35  [label="shoot", color="orange", penwidth=2];
     S35 -> S36  [label="eye away", color="orange", penwidth=2];
     S36 -> S37  [xlabel="review end", color="red", penwidth=2];
-    S37 -> S38 [label="open LCD", color="red", penwidth=2];
     S38 -> S37 [label="close LCD", color="red", penwidth=2];
-    
+    S37 -> S38 [label="open LCD", color="red", penwidth=2];
+
 }
 
 
@@ -80,6 +80,7 @@ subgraph cluster_fn {
 
     S37 -> S12 [label="Fn hold (Info)", color="orange", penwidth=2];
     S12 -> S37 [label="Fn release", color="red", penwidth=2];
+    S35    -> S36 [label="eye away", color="green", penwidth=2];
 }
 
 
