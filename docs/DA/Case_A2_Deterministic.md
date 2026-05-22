@@ -66,6 +66,26 @@ This figure focuses on the first half of Case A2, where Info-display persistence
 
 ## 4. State Transition Table
 
+
+> [!NOTE]
+> Some states defined in this document are visually indistinguishable
+> from one another, yet exhibit different operational behavior
+> depending on prior display-routing history and monitor context.
+
+### Operational Notes
+
+- Unless otherwise specified, “LCD monitor open (less than 180°)” refers to opening the monitor to at least 60° but less than 180° (to avoid entering self-portrait mode), while keeping the LCD active and allowing viewfinder status checks without triggering the eye sensor.
+
+- Unless otherwise specified, keep your eye and other objects away from the viewfinder to prevent eye sensor activation.
+
+- Unless otherwise specified, perform each operation with an interval of at least three seconds between actions.
+
+- Throughout this table, “closing the LCD” refers to returning the monitor to the docked position with the screen facing the user, as defined in the initial setup.
+
+- WB = White balance.
+
+
+
 | Step | Current State | Operation                                                     | Next State | LCD Status                                  | EVF Status          | My Assessment | Your Assessment             |
 | :--- | :------------ | :------------------------------------------------------------ | :--------- | :------------------------------------------ | :------------------ | :------------ | :------------- |
 | Context B                                                                                                                                |            |                                                                                               |                   |                                              |                   |                              |                 |
@@ -129,5 +149,3 @@ under at least some tested conditions:
   [CUSTOM SETTINGS MENU] >
   [d19 Custom monitor shooting display]
 - Initializing camera settings
-
-
