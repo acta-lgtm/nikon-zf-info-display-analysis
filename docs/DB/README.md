@@ -194,7 +194,7 @@ During ongoing observation, it became evident that the "Info display" and the "I
   Picture Review displayed on the LCD monitor \
   EVF off
 
-State S37 \
+- State S37 \
   LCD monitor docked \
   Info display persistently fixed on the LCD monitor \
   EVF off \
