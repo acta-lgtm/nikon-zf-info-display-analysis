@@ -194,7 +194,7 @@ During ongoing observation, it became evident that the "Info display" and the "I
   Picture Review displayed on the LCD monitor \
   EVF off
 
-- State S37 \
+State S37 \
   LCD monitor docked \
   Info display persistently fixed on the LCD monitor \
   EVF off \
@@ -205,6 +205,30 @@ During ongoing observation, it became evident that the "Info display" and the "I
   Info display persistently fixed on the LCD monitor \
   EVF off \
   (Note: Visually indistinguishable from S6 and S25. S38 is specifically defined for persistent fixation states observed after the Info display reappears or remains after interruption, regardless of the original entry route.)
+
+- State S39 \
+  LCD monitor open (less than 180 degrees) \
+  Info-like display shown on the LCD monitor while Display 5 is disabled \
+  EVF off \
+  (Note: Visually similar to S6/S25/S38. S39 is specifically defined for non-DISP Info-like states observed while Display 5 is unchecked.)
+
+- State S40 \
+  LCD monitor docked \
+  Info-like display shown on the LCD monitor while Display 5 is disabled \
+  EVF off \
+  (Note: Visually similar to S7/S21/S37. S40 is specifically defined for non-DISP Info-like states observed while Display 5 is unchecked.)
+
+- State S41 \
+  LCD monitor docked \
+  Info-like display shown on the LCD monitor via DISP while Display 5 is disabled \
+  EVF off \
+  (Note: S41 corresponds to the Display-5-disabled counterpart of S21.)
+
+- State S42 \
+  LCD monitor open (less than 180 degrees) \
+  Info-like display shown on the LCD monitor via DISP while Display 5 is disabled \
+  EVF off \
+  (Note: S42 corresponds to the Display-5-disabled counterpart of S25.)
 
 ---
 
