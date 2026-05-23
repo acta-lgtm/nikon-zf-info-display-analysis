@@ -147,7 +147,7 @@ The result suggests that Display 5 plays a central role in the persistent fixati
 
 ### Operational Notes
 
-- Unless otherwise specified, “LCD monitor open (less than 180°)” refers to opening the monitor to at least 60° but less than 180° (to avoid entering self-portrait mode), while keeping the LCD active and allowing viewfinder status checks without triggering the eye sensor.
+- Unless otherwise specified, “LCD monitor open (less than 180°)” refers to opening the monitor to at least 30° but less than 180° (to avoid entering self-portrait mode), while keeping the LCD active and allowing viewfinder status checks without triggering the eye sensor.
 
 - Unless otherwise specified, keep your eye and other objects away from the viewfinder to prevent eye sensor activation.
 
