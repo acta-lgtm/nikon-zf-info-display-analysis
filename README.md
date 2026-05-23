@@ -51,13 +51,6 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 ## 2. Structure of Data 
 
-### Current Status
-
-The following case documentation is currently available:
-
-- [Case B2: In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)
-
-Additional documentation is currently in preparation.
 
 ## Phase 1: Definition A (Coarse-grained)
 - [DA README](./docs/DA/README.md)
@@ -66,7 +59,7 @@ Additional documentation is currently in preparation.
 
 ### Phase 2: Definition B (Fine-grained)
 - [DB README](./docs/DB/README.md)
-- [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md): Work in progress
+- [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md): Initial observational archive published
 - [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)
 - [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md): Work in progress
 
