@@ -1,0 +1,250 @@
+digraph B1_Figure2 {
+label="Figure B1-2. Case B1: Display 5 Enabled and Persistent Fixation (Context B)";
+    labelloc="t";
+    labeljust="l";
+    rankdir=LR;
+
+    node [shape=box, fontsize=10];
+
+
+    S0  [label="S0\nNothing"];
+    S1  [label="S1\nLV overlay"];
+    S4  [label="S4\ni menu"];
+    S5  [label="S5\ni menu\nopen"];
+    S7  [label="S7\nInfo (non-DISP)"];
+    S6  [label="S6\nInfo (non-DISP)\nopen"];
+
+    S21 [label="S21\nInfo (DISP)"];
+    S25 [label="S25\nInfo (DISP)\nopen"];
+
+    S37 [label="S37\nFixed"];
+    S38 [label="S38\nFixed\nopen"];
+
+    S8  [label="S8\nEVF"];
+
+
+    { rank=same; S21; S7 }
+    { rank=same; S4; S8}
+    
+
+
+    S0  -> S21 [label="DISP", color="orange"];
+    S21 -> S0  [label="DISP", color="orange"];
+    
+    S21 -> S25 [label="open LCD", color="orange"];
+
+    S25 -> S38 [label="half-press", color="red", penwidth=2];
+    S21 -> S0  [label="half-press", color="orange"];
+
+
+
+    S38 -> S38 [label="power", color="red", penwidth=2];
+    S38 -> S37 [label="close LCD", color="red", penwidth=2];
+    S37 -> S38 [label="open LCD", color="red", penwidth=2];
+    S38 -> S38 [label="half-press", color="red", penwidth=2];
+
+
+
+
+    S37 -> S8  [label="EVF", color="orange"];
+    S8  -> S0  [label="eye away", color="orange"];
+    S37 -> S0  [label="DISP", color="orange", penwidth=2];
+
+
+
+    S0  -> S38 [label="open LCD", color="red", penwidth=2];
+
+
+    S38 -> S1 [label="DISP", color="blue", penwidth=2];
+    S1  -> S0 [label="close LCD", color="green"];
+    S0  -> S1 [label="open LCD", color="green"];
+
+
+    S0  -> S4 [label="[i]", color="orange"];
+    
+    S4  -> S7 [label="[i]", color="orange"];
+    S7  -> S6 [label="open LCD", color="orange"];
+    
+    S4  -> S5 [label="open LCD", color="orange"];
+    S5  -> S6 [label="[i]", color="orange"];
+
+
+    S6  -> S38 [label="half-press", color="red", penwidth=2];
+
+
+
+  //  S38 -> S1  [label="disable DP5 + half-press", color="green"];
+
+
+    /* =========================
+       Legend
+    ========================= */
+    subgraph cluster_legend {
+        label="Legend";
+        color="gray";
+
+key_base [label="gray: normal LCD open/close", shape=plaintext];
+key_entry [label="orange: explicit Info / display-mode transition", shape=plaintext];
+key_fixed [label="red: persistent fixation", shape=plaintext];
+key_recovery [label="blue: recovery via DISP", shape=plaintext];
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+digraph B1_Figure2 {
+label="Figure B1-2. Case B1: 適当な文をよろしく (Context A)";
+    labelloc="t";
+    labeljust="l";
+    rankdir=LR;
+
+    node [shape=box, fontsize=10];
+
+
+    /* --- Info --- */
+     S21 [label="S21\nInfo (DISP)"];
+    S25 [label="S25\nInfo (DISP) \nopen"];
+    S7  [label="S7\nInfo (non-DISP)"];
+    S6  [label="S6\nInfo (non-DISP) \nopen"];
+
+   /* --- 固定層 --- */
+    S37 [label="S37\nFixed"];
+    S38 [label="S38\nFixed \nopen"];
+
+    /* --- 基底 --- */
+    S17 [label="S17\nLiveView"];
+
+
+    /* =========================
+       DISP系生成
+    ========================= */
+    S17 -> S21
+        [label="DISP → DP5", color="orange", penwidth=2];
+
+    S21 -> S25
+        [label="open LCD", color="orange", penwidth=2];
+
+    S25 -> S21
+        [label="close LCD", color="orange", penwidth=2];
+
+
+    /* =========================
+       非DISP生成
+    ========================= */
+    S7 -> S6
+        [label="open LCD", color="brown", penwidth=2];
+
+    S6 -> S7
+        [label="close LCD", color="brown", penwidth=2];
+
+
+    /* =========================
+       固定化（再出現）
+    ========================= */
+
+    /* DISP由来 */
+    S21 -> S37
+        [label="trigger A", color="red", penwidth=2];
+
+    /* 非DISP由来 */
+    S6 -> S38
+        [label="trigger B", color="red", penwidth=2];
+
+    S7 -> S37
+        [label="implicit", style=dashed, color="red"];
+
+
+    /* =========================
+       固定層内部
+    ========================= */
+    S37 -> S38
+        [label="open LCD", color="blue", penwidth=2];
+
+    S38 -> S37
+        [label="close LCD", color="blue", penwidth=2];
+
+
+    /* =========================
+       離脱
+    ========================= */
+    S37 -> S17
+        [label="escape", color="green", penwidth=2];
+
+
+    /* =========================
+       再収束ループ
+    ========================= */
+    S37 -> S21
+        [label="再生成（条件依存）", style=dashed, color="purple"];
+
+    S37 -> S7
+        [label="再分岐（条件依存）", style=dashed, color="purple"];
+
+
+    /* =========================
+       設定依存
+    ========================= */
+    SET1 [label="Display5 OFF"];
+
+    SET1 -> S21
+        [label="disabled", style=dashed, color="gray"];
+
+    SET1 -> S25
+        [label="disabled", style=dashed, color="gray"];
+
+    SET1 -> S7
+        [label="still active", style=dashed, color="black"];
+
+
+    /* =========================
+       Legend
+    ========================= */
+    subgraph cluster_legend {
+
+        label="Legend";
+        color="gray";
+key_base [label="gray: normal LCD open/close", shape=plaintext];
+key_entry [label="orange: explicit Info / display-mode transition", shape=plaintext];
+key_fixed [label="red: persistent fixation", shape=plaintext];
+key_recovery [label="blue: recovery via DISP", shape=plaintext];
+    
+    }
+}
+

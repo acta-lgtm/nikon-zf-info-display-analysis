@@ -1,0 +1,94 @@
+digraph B1_Figure1 {
+label="Figure B1-1. Case B1: Info Fixation Under Default Configuration (Context B)";
+    labelloc="t";
+    labeljust="l";
+    rankdir=LR;
+
+    node [shape=box, fontsize=10];
+
+
+
+    S6  [label="S6\nInfo (non-DISP) \nopen"];
+    S7  [label="S7\nInfo (non-DISP)"];
+    
+
+    S1  [label="S1\nLiveView open"];
+    S17 [label="S17\nLiveView"];
+
+
+    S21 [label="S21\nInfo (DP5)"];
+    S25 [label="S25\nInfo (DP5)\nopen"];
+
+
+
+    S37 [label="S37\nFixed"];
+    S38 [label="S38\nFixed \nopen"];
+    S10 [label="S10\nPlayback"];
+    S11 [label="S11\nPlayback \nopen"];
+
+
+{ rank=same; S17; S1 }
+{ rank=same; S21; S25 }
+//{ rank=same; S37; S38 }
+//{ rank=same; S10; S11 }
+
+
+    S17 -> S1  [xlabel="open LCD", color="#546e7a"];
+    S1  -> S17 [xlabel="close LCD", color="#546e7a"];
+
+
+    S17 -> S21 [label="DISP", color="orange"];
+    S21 -> S25 [label="open LCD", color="orange"];
+    S25 -> S21 [xlabel="close LCD", color="orange"];
+    S1  -> S25 [label="DISP", color="#fb8c00"];
+    
+
+
+
+
+
+    S25 -> S38 [label="half-press", color="red"];
+    S21 -> S37 [label="half-press", color="red"];
+    S38 -> S38 [label="half-press", color="red", penwidth=2];
+    S37 -> S37 [label="half-press", color="red", penwidth=2];
+
+
+
+    S21 -> S37 [label="power toggle", color="red"];
+    S25 -> S38 [label="power toggle", color="red"];
+    S37 -> S38 [xlabel="open LCD", color="red"];
+    S38 -> S37 [xlabel="close LCD", color="red"];
+
+
+
+    S10 -> S37 [xlabel="power toggle", color="red"];
+    S37 -> S10 [label="press ▶", color="orange"];
+    S10 -> S37 [label="exit ▶", color="red"];
+    S11 -> S38 [label="power toggle", color="red"];
+    S38 -> S11 [label="press ▶", color="orange"];
+    S11 -> S38 [label="exit ▶", color="red"];
+    S21 -> S10 [label="press ▶", color="orange"];
+    S25 -> S11 [xlabel="press ▶", color="orange"];
+    
+    /* =========================
+       LCD・DISP
+    ========================= */
+
+    S37 -> S17 [label="DISP", color="blue", penwidth=2];
+    S38 -> S1  [label="DISP", color="blue", penwidth=2];
+
+
+
+    /* =========================
+       Legend
+    ========================= */
+    subgraph cluster_legend {
+        label="Legend";
+        color="gray";
+key_base [label="gray: normal LCD open/close", shape=plaintext];
+key_entry [label="orange: explicit Info / display-mode transition", shape=plaintext];
+key_fixed [label="red: persistent fixation", shape=plaintext];
+key_recovery [label="blue: recovery via DISP", shape=plaintext];
+    
+    }
+}

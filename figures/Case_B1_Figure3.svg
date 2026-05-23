@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="827pt" height="315pt" viewBox="0.00 0.00 827.00 315.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 310.8)">
+<title>B1_Figure3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-310.8 823.5,-310.8 823.5,4 -4,4"/>
+<text xml:space="preserve" text-anchor="middle" x="236.62" y="-290.2" font-family="Times,serif" font-size="14.00">Figure B1-3. Case B1: Display 5 Disabled and Normalized Recovery (Context B)</text>
+<g id="clust2" class="cluster">
+<title>cluster_legend</title>
+<polygon fill="none" stroke="gray" points="8,-98 8,-175 216.87,-175 216.87,-98 8,-98"/>
+<text xml:space="preserve" text-anchor="middle" x="36.99" y="-158.4" font-family="Times,serif" font-size="14.00">Legend</text>
+</g>
+<!-- S8 -->
+<g id="node1" class="node">
+<title>S8</title>
+<polygon fill="none" stroke="black" points="139.44,-88 85.44,-88 85.44,-52 139.44,-52 139.44,-88"/>
+<text xml:space="preserve" text-anchor="middle" x="112.44" y="-73" font-family="Times,serif" font-size="10.00">S8</text>
+<text xml:space="preserve" text-anchor="middle" x="112.44" y="-61" font-family="Times,serif" font-size="10.00">EVF</text>
+</g>
+<!-- S0 -->
+<g id="node2" class="node">
+<title>S0</title>
+<polygon fill="none" stroke="black" points="351.34,-128 297.34,-128 297.34,-92 351.34,-92 351.34,-128"/>
+<text xml:space="preserve" text-anchor="middle" x="324.34" y="-113" font-family="Times,serif" font-size="10.00">S0</text>
+<text xml:space="preserve" text-anchor="middle" x="324.34" y="-101" font-family="Times,serif" font-size="10.00">Nothing</text>
+</g>
+<!-- S8&#45;&gt;S0 -->
+<g id="edge6" class="edge">
+<title>S8-&gt;S0</title>
+<path fill="none" stroke="green" d="M139.59,-74.99C176.36,-81.99 243.53,-94.79 285.67,-102.82"/>
+<polygon fill="green" stroke="green" points="284.88,-106.23 295.36,-104.67 286.19,-99.36 284.88,-106.23"/>
+<text xml:space="preserve" text-anchor="middle" x="253.1" y="-105.56" font-family="Times,serif" font-size="14.00">eye away</text>
+</g>
+<!-- S1 -->
+<g id="node7" class="node">
+<title>S1</title>
+<polygon fill="none" stroke="black" points="819.5,-159 765.5,-159 765.5,-115 819.5,-115 819.5,-159"/>
+<text xml:space="preserve" text-anchor="middle" x="792.5" y="-146" font-family="Times,serif" font-size="10.00">S1</text>
+<text xml:space="preserve" text-anchor="middle" x="792.5" y="-134" font-family="Times,serif" font-size="10.00">LV</text>
+<text xml:space="preserve" text-anchor="middle" x="792.5" y="-122" font-family="Times,serif" font-size="10.00">open</text>
+</g>
+<!-- S8&#45;&gt;S1 -->
+<!-- S0&#45;&gt;S8 -->
+<g id="edge7" class="edge">
+<title>S0-&gt;S8</title>
+<path fill="none" stroke="green" d="M308.15,-91.66C300.44,-83.78 290.37,-75.42 279.34,-71.2 237.52,-55.22 185.32,-58.2 150.77,-63.01"/>
+<polygon fill="green" stroke="green" points="150.62,-59.49 141.26,-64.46 151.67,-66.41 150.62,-59.49"/>
+<text xml:space="preserve" text-anchor="middle" x="253.1" y="-75.4" font-family="Times,serif" font-size="14.00">EVF</text>
+</g>
+<!-- S4 -->
+<g id="node4" class="node">
+<title>S4</title>
+<polygon fill="none" stroke="black" points="455.15,-261 401.15,-261 401.15,-225 455.15,-225 455.15,-261"/>
+<text xml:space="preserve" text-anchor="middle" x="428.15" y="-246" font-family="Times,serif" font-size="10.00">S4</text>
+<text xml:space="preserve" text-anchor="middle" x="428.15" y="-234" font-family="Times,serif" font-size="10.00">i menu</text>
+</g>
+<!-- S0&#45;&gt;S4 -->
+<g id="edge9" class="edge">
+<title>S0-&gt;S4</title>
+<path fill="none" stroke="green" d="M330.62,-128.26C337.17,-148.49 349.89,-181.27 369.34,-204 375.55,-211.26 383.42,-217.75 391.34,-223.26"/>
+<polygon fill="green" stroke="green" points="389.36,-226.14 399.66,-228.64 393.17,-220.27 389.36,-226.14"/>
+<text xml:space="preserve" text-anchor="middle" x="375.94" y="-220.09" font-family="Times,serif" font-size="14.00">[i]</text>
+</g>
+<!-- S41 -->
+<g id="node6" class="node">
+<title>S41</title>
+<polygon fill="none" stroke="black" points="661.62,-155 561.18,-155 561.18,-119 661.62,-119 661.62,-155"/>
+<text xml:space="preserve" text-anchor="middle" x="611.4" y="-140" font-family="Times,serif" font-size="10.00">S41</text>
+<text xml:space="preserve" text-anchor="middle" x="611.4" y="-128" font-family="Times,serif" font-size="10.00">Info (DISP, DP5 off)</text>
+</g>
+<!-- S0&#45;&gt;S41 -->
+<g id="edge1" class="edge">
+<title>S0-&gt;S41</title>
+<path fill="none" stroke="green" d="M340.81,-128.3C348.58,-136.4 358.62,-145.35 369.34,-151 381.91,-157.63 386.42,-156.43 400.55,-158 450.72,-163.56 507.71,-157.04 549.63,-149.84"/>
+<polygon fill="green" stroke="green" points="550.04,-153.32 559.27,-148.12 548.81,-146.43 550.04,-153.32"/>
+<text xml:space="preserve" text-anchor="middle" x="428.15" y="-164.28" font-family="Times,serif" font-size="14.00">DISP</text>
+</g>
+<!-- S30 -->
+<g id="node3" class="node">
+<title>S30</title>
+<polygon fill="none" stroke="black" points="659.39,-282 563.41,-282 563.41,-238 659.39,-238 659.39,-282"/>
+<text xml:space="preserve" text-anchor="middle" x="611.4" y="-269" font-family="Times,serif" font-size="10.00">S30</text>
+<text xml:space="preserve" text-anchor="middle" x="611.4" y="-257" font-family="Times,serif" font-size="10.00">LV(i menu overlay)</text>
+<text xml:space="preserve" text-anchor="middle" x="611.4" y="-245" font-family="Times,serif" font-size="10.00">open</text>
+</g>
+<!-- S30&#45;&gt;S1 -->
+<g id="edge13" class="edge">
+<title>S30-&gt;S1</title>
+<path fill="none" stroke="green" d="M659.78,-244.63C687.32,-234.13 721.59,-218.26 747.5,-197 757.11,-189.11 765.71,-178.68 772.71,-168.72"/>
+<polygon fill="green" stroke="green" points="775.43,-170.95 778.06,-160.68 769.6,-167.07 775.43,-170.95"/>
+<text xml:space="preserve" text-anchor="middle" x="718.14" y="-235.08" font-family="Times,serif" font-size="14.00">[i]</text>
+</g>
+<!-- S4&#45;&gt;S30 -->
+<g id="edge12" class="edge">
+<title>S4-&gt;S30</title>
+<path fill="none" stroke="green" d="M455.51,-245.47C480.62,-247.83 519.31,-251.46 551.74,-254.5"/>
+<polygon fill="green" stroke="green" points="551.13,-257.96 561.41,-255.41 551.78,-250.99 551.13,-257.96"/>
+<text xml:space="preserve" text-anchor="middle" x="503.88" y="-256.72" font-family="Times,serif" font-size="14.00">open LCD</text>
+</g>
+<!-- S40 -->
+<g id="node5" class="node">
+<title>S40</title>
+<polygon fill="none" stroke="black" points="670.78,-213 552.02,-213 552.02,-177 670.78,-177 670.78,-213"/>
+<text xml:space="preserve" text-anchor="middle" x="611.4" y="-198" font-family="Times,serif" font-size="10.00">S40</text>
+<text xml:space="preserve" text-anchor="middle" x="611.4" y="-186" font-family="Times,serif" font-size="10.00">Info (non-DISP, DP5 off)</text>
+</g>
+<!-- S4&#45;&gt;S40 -->
+<g id="edge10" class="edge">
+<title>S4-&gt;S40</title>
+<path fill="none" stroke="green" d="M455.41,-233.16C461.4,-231.07 467.76,-228.96 473.75,-227.2 495.36,-220.85 519.17,-214.89 540.77,-209.86"/>
+<polygon fill="green" stroke="green" points="541.41,-213.31 550.38,-207.66 539.85,-206.48 541.41,-213.31"/>
+<text xml:space="preserve" text-anchor="middle" x="503.88" y="-231.4" font-family="Times,serif" font-size="14.00">[i]</text>
+</g>
+<!-- S40&#45;&gt;S1 -->
+<g id="edge11" class="edge">
+<title>S40-&gt;S1</title>
+<path fill="none" stroke="green" d="M670.97,-181.39C694.99,-175.18 722.88,-167.16 747.5,-158 749.97,-157.08 752.5,-156.07 755.03,-155.01"/>
+<polygon fill="green" stroke="green" points="756.21,-158.31 763.92,-151.05 753.36,-151.92 756.21,-158.31"/>
+<text xml:space="preserve" text-anchor="middle" x="718.14" y="-180.78" font-family="Times,serif" font-size="14.00">open LCD</text>
+</g>
+<!-- S41&#45;&gt;S0 -->
+<g id="edge2" class="edge">
+<title>S41-&gt;S0</title>
+<path fill="none" stroke="green" d="M560.68,-132.29C504.37,-126.96 413.86,-118.38 363.06,-113.57"/>
+<polygon fill="green" stroke="green" points="363.44,-110.09 353.15,-112.63 362.78,-117.06 363.44,-110.09"/>
+<text xml:space="preserve" text-anchor="middle" x="428.15" y="-126.35" font-family="Times,serif" font-size="14.00">DISP</text>
+</g>
+<!-- S41&#45;&gt;S0 -->
+<g id="edge4" class="edge">
+<title>S41-&gt;S0</title>
+<path fill="none" stroke="green" d="M560.9,-120.45C530.87,-111.29 491.55,-100.84 455.75,-96.2 431.42,-93.04 424.98,-93.98 400.55,-96.2 388.13,-97.33 374.69,-99.49 362.66,-101.77"/>
+<polygon fill="green" stroke="green" points="362.24,-98.29 353.11,-103.67 363.6,-105.15 362.24,-98.29"/>
+<text xml:space="preserve" text-anchor="middle" x="428.15" y="-100.4" font-family="Times,serif" font-size="14.00">half-press</text>
+</g>
+<!-- S41&#45;&gt;S1 -->
+<g id="edge3" class="edge">
+<title>S41-&gt;S1</title>
+<path fill="none" stroke="green" d="M661.81,-137C690.95,-137 727.22,-137 753.99,-137"/>
+<polygon fill="green" stroke="green" points="753.69,-140.5 763.69,-137 753.69,-133.5 753.69,-140.5"/>
+<text xml:space="preserve" text-anchor="middle" x="718.14" y="-141.2" font-family="Times,serif" font-size="14.00">open LCD</text>
+</g>
+<!-- S1&#45;&gt;S0 -->
+<g id="edge5" class="edge">
+<title>S1-&gt;S0</title>
+<path fill="none" stroke="green" stroke-width="2" d="M765.39,-127.46C711.41,-108.8 583.4,-69.95 473.75,-78.2 426.95,-81.72 414.82,-82.41 369.34,-94 367.51,-94.46 365.66,-94.97 363.8,-95.52"/>
+<polygon fill="green" stroke="green" stroke-width="2" points="362.9,-92.13 354.47,-98.55 365.06,-98.79 362.9,-92.13"/>
+<text xml:space="preserve" text-anchor="middle" x="503.88" y="-82.4" font-family="Times,serif" font-size="14.00">close LCD</text>
+</g>
+<!-- key_base -->
+<g id="node8" class="node">
+<title>key_base</title>
+<text xml:space="preserve" text-anchor="middle" x="112.44" y="-121" font-family="Times,serif" font-size="10.00">green: expected recovery / normal transition</text>
+</g>
+</g>
+</svg>

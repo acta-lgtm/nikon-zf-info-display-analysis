@@ -1,0 +1,63 @@
+digraph B1_Figure3 {
+label="Figure B1-3. Case B1: Display 5 Disabled and Normalized Recovery (Context B)";
+    labelloc="t";
+    labeljust="l";
+    rankdir=LR;
+
+    node [shape=box, fontsize=10];
+
+
+
+    S8  [label="S8\nEVF"];
+    S0  [label="S0\nNothing"];
+    
+    S30  [label="S30\nLV(i menu overlay)\nopen"];
+    S4  [label="S4\ni menu"];
+    
+    S40  [label="S40\nInfo (non-DISP, DP5 off)"];
+    S41 [label="S41\nInfo (DISP, DP5 off)"];
+    S1  [label="S1\nLV\nopen"];
+ 
+
+
+    { rank=same; S41; S40 }
+ //   { rank=same; S4; S8}
+    
+
+
+    S0  -> S41 [label="DISP", color="green"];
+    S41 -> S0  [label="DISP", color="green"];
+    S41 -> S1 [label="open LCD", color="green"];
+    S41 -> S0  [label="half-press", color="green"];
+    S1 -> S0 [label="close LCD", color="green", penwidth=2];
+
+
+    S8  -> S0  [label="eye away", color="green"];
+    S0  -> S8  [label="EVF", color="green"];
+
+
+
+    S8 -> S1  [style="invis"];
+
+    S0  -> S4 [label="[i]", color="green"];
+    
+    S4  -> S40 [label="[i]", color="green"];
+    S40  -> S1 [label="open LCD", color="green"];
+    
+    S4  -> S30 [label="open LCD", color="green"];
+    S30  -> S1 [label="[i]", color="green"];
+
+    /* =========================
+       Legend
+    ========================= */
+    subgraph cluster_legend {
+        label="Legend";
+        color="gray";
+
+key_base [label="green: expected recovery / normal transition", shape=plaintext];
+    }
+}
+
+
+
+
