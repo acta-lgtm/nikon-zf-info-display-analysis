@@ -34,10 +34,11 @@ subgraph cluster_normal {
     color="darkgreen";
 
     S17_L -> S8  [label="look into EVF", color="green", penwidth=2];
-    S8     -> S35 [xlabel="shoot", color="green", penwidth=2];
+    S8     -> S35 [xlabel="shoot + release", color="green", penwidth=2];
     S35    -> S36 [label="eye away", color="green", penwidth=2];
     S36    -> S17_R [label="review end", color="green", penwidth=2];
     S17_L -> S21 [xlabel="DISP → Info", color="orange", penwidth=2];
+    S8 -> S8  [label="shoot + half-press", color="green", penwidth=2];
     
 }
 

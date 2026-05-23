@@ -1,30 +1,30 @@
-<svg width="961pt" height="438pt" viewBox="0.00 0.00 961.00 438.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 433.8)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="961pt" height="473pt" viewBox="0.00 0.00 961.00 473.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 468.8)">
 <title>B2_Extended</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-433.8 957.43,-433.8 957.43,4 -4,4"/>
-<text xml:space="preserve" text-anchor="middle" x="306.82" y="-413.2" font-family="Times,serif" font-size="14.00">Figure B2-1. Case B2: Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations</text>
+<polygon fill="white" stroke="none" points="-4,4 -4,-468.8 957.43,-468.8 957.43,4 -4,4"/>
+<text xml:space="preserve" text-anchor="middle" x="306.82" y="-448.2" font-family="Times,serif" font-size="14.00">Figure B2-1. Case B2: Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations</text>
 <g id="clust2" class="cluster">
 <title>cluster_normal</title>
-<polygon fill="none" stroke="darkgreen" points="52.99,-8 52.99,-155 782.64,-155 782.64,-8 52.99,-8"/>
-<text xml:space="preserve" text-anchor="middle" x="100.85" y="-138.4" font-family="Times,serif" font-size="14.00">Normal Route</text>
+<polygon fill="none" stroke="darkgreen" points="52.99,-8 52.99,-190 782.64,-190 782.64,-8 52.99,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="100.85" y="-173.4" font-family="Times,serif" font-size="14.00">Normal Route</text>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_info</title>
-<polygon fill="none" stroke="red" points="518.84,-163 518.84,-248 780.98,-248 780.98,-163 518.84,-163"/>
-<text xml:space="preserve" text-anchor="middle" x="590.22" y="-231.4" font-family="Times,serif" font-size="14.00">Info Persistence Route</text>
+<polygon fill="none" stroke="red" points="518.84,-198 518.84,-283 780.98,-283 780.98,-198 518.84,-198"/>
+<text xml:space="preserve" text-anchor="middle" x="590.22" y="-266.4" font-family="Times,serif" font-size="14.00">Info Persistence Route</text>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_legend</title>
-<polygon fill="none" stroke="gray" points="8,-163 8,-397 194.97,-397 194.97,-163 8,-163"/>
-<text xml:space="preserve" text-anchor="middle" x="30.99" y="-384" font-family="Times,serif" font-size="10.00">Legend</text>
+<polygon fill="none" stroke="gray" points="8,-198 8,-432 194.97,-432 194.97,-198 8,-198"/>
+<text xml:space="preserve" text-anchor="middle" x="30.99" y="-419" font-family="Times,serif" font-size="10.00">Legend</text>
 </g>
 <!-- S17_L -->
 <g id="node1" class="node">
 <title>S17_L</title>
-<polygon fill="none" stroke="black" points="141.98,-81 60.99,-81 60.99,-37 141.98,-37 141.98,-81"/>
-<text xml:space="preserve" text-anchor="middle" x="101.49" y="-68" font-family="Times,serif" font-size="10.00">S17</text>
-<text xml:space="preserve" text-anchor="middle" x="101.49" y="-56" font-family="Times,serif" font-size="10.00">LCD Live View</text>
-<text xml:space="preserve" text-anchor="middle" x="101.49" y="-44" font-family="Times,serif" font-size="10.00">Display 1</text>
+<polygon fill="none" stroke="black" points="141.98,-89 60.99,-89 60.99,-45 141.98,-45 141.98,-89"/>
+<text xml:space="preserve" text-anchor="middle" x="101.49" y="-76" font-family="Times,serif" font-size="10.00">S17</text>
+<text xml:space="preserve" text-anchor="middle" x="101.49" y="-64" font-family="Times,serif" font-size="10.00">LCD Live View</text>
+<text xml:space="preserve" text-anchor="middle" x="101.49" y="-52" font-family="Times,serif" font-size="10.00">Display 1</text>
 </g>
 <!-- S8 -->
 <g id="node3" class="node">
@@ -37,182 +37,189 @@
 <!-- S17_L&#45;&gt;S8 -->
 <g id="edge1" class="edge">
 <title>S17_L-&gt;S8</title>
-<path fill="none" stroke="green" stroke-width="2" d="M142.31,-55.51C182.79,-51.96 245.68,-46.45 290.06,-42.56"/>
-<polygon fill="green" stroke="green" stroke-width="2" points="290.23,-46.05 299.89,-41.69 289.62,-39.08 290.23,-46.05"/>
-<text xml:space="preserve" text-anchor="middle" x="245.03" y="-53.96" font-family="Times,serif" font-size="14.00">look into EVF</text>
+<path fill="none" stroke="green" stroke-width="2" d="M142.31,-62.18C182.79,-57.28 245.68,-49.66 290.06,-44.29"/>
+<polygon fill="green" stroke="green" stroke-width="2" points="290.39,-47.78 299.9,-43.1 289.55,-40.83 290.39,-47.78"/>
+<text xml:space="preserve" text-anchor="middle" x="245.03" y="-58.44" font-family="Times,serif" font-size="14.00">look into EVF</text>
 </g>
 <!-- S21 -->
 <g id="node4" class="node">
 <title>S21</title>
-<polygon fill="none" stroke="black" points="376.44,-122 309.62,-122 309.62,-78 376.44,-78 376.44,-122"/>
-<text xml:space="preserve" text-anchor="middle" x="343.03" y="-109" font-family="Times,serif" font-size="10.00">S21</text>
-<text xml:space="preserve" text-anchor="middle" x="343.03" y="-97" font-family="Times,serif" font-size="10.00">Explicit Info</text>
-<text xml:space="preserve" text-anchor="middle" x="343.03" y="-85" font-family="Times,serif" font-size="10.00">(Display 5)</text>
+<polygon fill="none" stroke="black" points="376.44,-157 309.62,-157 309.62,-113 376.44,-113 376.44,-157"/>
+<text xml:space="preserve" text-anchor="middle" x="343.03" y="-144" font-family="Times,serif" font-size="10.00">S21</text>
+<text xml:space="preserve" text-anchor="middle" x="343.03" y="-132" font-family="Times,serif" font-size="10.00">Explicit Info</text>
+<text xml:space="preserve" text-anchor="middle" x="343.03" y="-120" font-family="Times,serif" font-size="10.00">(Display 5)</text>
 </g>
 <!-- S17_L&#45;&gt;S21 -->
 <g id="edge5" class="edge">
 <title>S17_L-&gt;S21</title>
-<path fill="none" stroke="orange" stroke-width="2" d="M142.31,-65.82C184.84,-73.1 252.12,-84.61 296.66,-92.24"/>
-<polygon fill="orange" stroke="orange" stroke-width="2" points="295.99,-95.67 306.44,-93.91 297.17,-88.77 295.99,-95.67"/>
-<text xml:space="preserve" text-anchor="middle" x="190.29" y="-84.32" font-family="Times,serif" font-size="14.00">DISP → Info</text>
+<path fill="none" stroke="orange" stroke-width="2" d="M142.31,-78.31C184.93,-90.4 252.41,-109.56 296.95,-122.2"/>
+<polygon fill="orange" stroke="orange" stroke-width="2" points="295.94,-125.55 306.51,-124.92 297.85,-118.82 295.94,-125.55"/>
+<text xml:space="preserve" text-anchor="middle" x="190.49" y="-89.48" font-family="Times,serif" font-size="14.00">DISP → Info</text>
 </g>
 <!-- S17_R -->
 <g id="node2" class="node">
 <title>S17_R</title>
-<polygon fill="none" stroke="black" points="953.43,-134 872.44,-134 872.44,-90 953.43,-90 953.43,-134"/>
-<text xml:space="preserve" text-anchor="middle" x="912.94" y="-121" font-family="Times,serif" font-size="10.00">S17</text>
-<text xml:space="preserve" text-anchor="middle" x="912.94" y="-109" font-family="Times,serif" font-size="10.00">LCD Live View</text>
-<text xml:space="preserve" text-anchor="middle" x="912.94" y="-97" font-family="Times,serif" font-size="10.00">Display 1</text>
+<polygon fill="none" stroke="black" points="953.43,-169 872.44,-169 872.44,-125 953.43,-125 953.43,-169"/>
+<text xml:space="preserve" text-anchor="middle" x="912.94" y="-156" font-family="Times,serif" font-size="10.00">S17</text>
+<text xml:space="preserve" text-anchor="middle" x="912.94" y="-144" font-family="Times,serif" font-size="10.00">LCD Live View</text>
+<text xml:space="preserve" text-anchor="middle" x="912.94" y="-132" font-family="Times,serif" font-size="10.00">Display 1</text>
+</g>
+<!-- S8&#45;&gt;S8 -->
+<g id="edge6" class="edge">
+<title>S8-&gt;S8</title>
+<path fill="none" stroke="green" stroke-width="2" d="M324.87,-60.21C323.39,-69.8 329.44,-78 343.03,-78 349.82,-78 354.73,-75.95 357.76,-72.7"/>
+<polygon fill="green" stroke="green" stroke-width="2" points="361.11,-73.7 360.38,-63.13 354.36,-71.85 361.11,-73.7"/>
+<text xml:space="preserve" text-anchor="middle" x="343.03" y="-82.2" font-family="Times,serif" font-size="14.00">shoot + half-press</text>
 </g>
 <!-- S35 -->
 <g id="node5" class="node">
 <title>S35</title>
-<polygon fill="none" stroke="black" points="602.55,-104 525.18,-104 525.18,-60 602.55,-60 602.55,-104"/>
-<text xml:space="preserve" text-anchor="middle" x="563.87" y="-91" font-family="Times,serif" font-size="10.00">S35</text>
-<text xml:space="preserve" text-anchor="middle" x="563.87" y="-79" font-family="Times,serif" font-size="10.00">Picture Review</text>
-<text xml:space="preserve" text-anchor="middle" x="563.87" y="-67" font-family="Times,serif" font-size="10.00">EVF</text>
+<polygon fill="none" stroke="black" points="602.55,-139 525.18,-139 525.18,-95 602.55,-95 602.55,-139"/>
+<text xml:space="preserve" text-anchor="middle" x="563.87" y="-126" font-family="Times,serif" font-size="10.00">S35</text>
+<text xml:space="preserve" text-anchor="middle" x="563.87" y="-114" font-family="Times,serif" font-size="10.00">Picture Review</text>
+<text xml:space="preserve" text-anchor="middle" x="563.87" y="-102" font-family="Times,serif" font-size="10.00">EVF</text>
 </g>
 <!-- S8&#45;&gt;S35 -->
 <g id="edge2" class="edge">
 <title>S8-&gt;S35</title>
-<path fill="none" stroke="green" stroke-width="2" d="M383.4,-44.51C416.53,-50.16 465.11,-58.85 507.18,-68 508.89,-68.37 510.62,-68.76 512.37,-69.15"/>
-<polygon fill="green" stroke="green" stroke-width="2" points="511.42,-72.53 521.96,-71.41 513.03,-65.71 511.42,-72.53"/>
-<text xml:space="preserve" text-anchor="middle" x="439.5" y="-44.75" font-family="Times,serif" font-size="14.00">shoot</text>
+<path fill="none" stroke="green" stroke-width="2" d="M383.29,-47.87C416.79,-56.79 465.92,-71.1 507.18,-88 509.19,-88.82 511.23,-89.7 513.27,-90.6"/>
+<polygon fill="green" stroke="green" stroke-width="2" points="511.68,-93.72 522.22,-94.8 514.66,-87.39 511.68,-93.72"/>
+<text xml:space="preserve" text-anchor="middle" x="497.13" y="-56.44" font-family="Times,serif" font-size="14.00">shoot + release</text>
 </g>
 <!-- S37 -->
 <g id="node7" class="node">
 <title>S37</title>
-<polygon fill="none" stroke="black" points="600.89,-215 526.84,-215 526.84,-171 600.89,-171 600.89,-215"/>
-<text xml:space="preserve" text-anchor="middle" x="563.87" y="-202" font-family="Times,serif" font-size="10.00">S37</text>
-<text xml:space="preserve" text-anchor="middle" x="563.87" y="-190" font-family="Times,serif" font-size="10.00">Persistent Info</text>
-<text xml:space="preserve" text-anchor="middle" x="563.87" y="-178" font-family="Times,serif" font-size="10.00">LCD docked</text>
+<polygon fill="none" stroke="black" points="600.89,-250 526.84,-250 526.84,-206 600.89,-206 600.89,-250"/>
+<text xml:space="preserve" text-anchor="middle" x="563.87" y="-237" font-family="Times,serif" font-size="10.00">S37</text>
+<text xml:space="preserve" text-anchor="middle" x="563.87" y="-225" font-family="Times,serif" font-size="10.00">Persistent Info</text>
+<text xml:space="preserve" text-anchor="middle" x="563.87" y="-213" font-family="Times,serif" font-size="10.00">LCD docked</text>
 </g>
 <!-- S8&#45;&gt;S37 -->
-<g id="edge8" class="edge">
+<g id="edge9" class="edge">
 <title>S8-&gt;S37</title>
-<path fill="none" stroke="red" stroke-width="2" d="M383.21,-56.2C389.1,-58.64 395.15,-60.99 400.96,-63 447.03,-78.89 474.18,-54.35 507.18,-90.2 528.19,-113.02 502.88,-132.41 518.84,-159 519.25,-159.67 519.67,-160.34 520.11,-160.99"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="517.38,-163.18 526.52,-168.53 522.71,-158.65 517.38,-163.18"/>
-<text xml:space="preserve" text-anchor="middle" x="454.07" y="-94.4" font-family="Times,serif" font-size="14.00">release + eye away</text>
+<path fill="none" stroke="red" stroke-width="2" d="M374.13,-60.33C382.54,-65.94 391.87,-71.61 400.96,-76 445.62,-97.57 475.28,-72.23 507.18,-110.2 531.37,-138.99 499.97,-161.47 518.84,-194 519.24,-194.68 519.65,-195.35 520.08,-196.01"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="517.32,-198.16 526.42,-203.59 522.69,-193.67 517.32,-198.16"/>
+<text xml:space="preserve" text-anchor="middle" x="454.07" y="-114.4" font-family="Times,serif" font-size="14.00">release + eye away</text>
 </g>
 <!-- S21&#45;&gt;S37 -->
-<g id="edge6" class="edge">
+<g id="edge7" class="edge">
 <title>S21-&gt;S37</title>
-<path fill="none" stroke="red" stroke-width="2" d="M358.2,-122.49C368.35,-136.67 383.32,-154.12 400.96,-164 435.5,-183.34 480.1,-190.24 513.74,-192.5"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="513.31,-195.98 523.48,-193.01 513.68,-188.99 513.31,-195.98"/>
-<text xml:space="preserve" text-anchor="middle" x="454.07" y="-196.09" font-family="Times,serif" font-size="14.00">power cycle</text>
+<path fill="none" stroke="red" stroke-width="2" d="M360.97,-157.32C371.26,-169.35 385.4,-183.45 400.96,-192 435.83,-211.16 480.22,-220.12 513.7,-224.32"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="513.07,-227.77 523.4,-225.41 513.85,-220.81 513.07,-227.77"/>
+<text xml:space="preserve" text-anchor="middle" x="454.07" y="-227.51" font-family="Times,serif" font-size="14.00">power cycle</text>
 </g>
 <!-- S36 -->
 <g id="node6" class="node">
 <title>S36</title>
-<polygon fill="none" stroke="black" points="774.64,-122 697.27,-122 697.27,-78 774.64,-78 774.64,-122"/>
-<text xml:space="preserve" text-anchor="middle" x="735.95" y="-109" font-family="Times,serif" font-size="10.00">S36</text>
-<text xml:space="preserve" text-anchor="middle" x="735.95" y="-97" font-family="Times,serif" font-size="10.00">Picture Review</text>
-<text xml:space="preserve" text-anchor="middle" x="735.95" y="-85" font-family="Times,serif" font-size="10.00">LCD</text>
+<polygon fill="none" stroke="black" points="774.64,-157 697.27,-157 697.27,-113 774.64,-113 774.64,-157"/>
+<text xml:space="preserve" text-anchor="middle" x="735.95" y="-144" font-family="Times,serif" font-size="10.00">S36</text>
+<text xml:space="preserve" text-anchor="middle" x="735.95" y="-132" font-family="Times,serif" font-size="10.00">Picture Review</text>
+<text xml:space="preserve" text-anchor="middle" x="735.95" y="-120" font-family="Times,serif" font-size="10.00">LCD</text>
 </g>
 <!-- S35&#45;&gt;S36 -->
 <g id="edge3" class="edge">
 <title>S35-&gt;S36</title>
-<path fill="none" stroke="green" stroke-width="2" d="M603.04,-67.19C625.55,-60.56 654.4,-55.73 679.27,-63.2 685.42,-65.05 691.52,-67.82 697.3,-71.04"/>
-<polygon fill="green" stroke="green" stroke-width="2" points="695.04,-73.75 705.39,-76.03 698.72,-67.8 695.04,-73.75"/>
-<text xml:space="preserve" text-anchor="middle" x="649.91" y="-67.4" font-family="Times,serif" font-size="14.00">eye away</text>
+<path fill="none" stroke="green" stroke-width="2" d="M603.04,-102.19C625.55,-95.56 654.4,-90.73 679.27,-98.2 685.42,-100.05 691.52,-102.82 697.3,-106.04"/>
+<polygon fill="green" stroke="green" stroke-width="2" points="695.04,-108.75 705.39,-111.03 698.72,-102.8 695.04,-108.75"/>
+<text xml:space="preserve" text-anchor="middle" x="649.91" y="-102.4" font-family="Times,serif" font-size="14.00">eye away</text>
 </g>
 <!-- S35&#45;&gt;S36 -->
-<g id="edge10" class="edge">
+<g id="edge11" class="edge">
 <title>S35-&gt;S36</title>
-<path fill="none" stroke="orange" stroke-width="2" d="M603.04,-86.04C627,-88.58 658.19,-91.88 684.22,-94.63"/>
-<polygon fill="orange" stroke="orange" stroke-width="2" points="683.59,-98.08 693.9,-95.66 684.32,-91.12 683.59,-98.08"/>
-<text xml:space="preserve" text-anchor="middle" x="649.91" y="-97.86" font-family="Times,serif" font-size="14.00">eye away</text>
+<path fill="none" stroke="orange" stroke-width="2" d="M603.04,-121.04C627,-123.58 658.19,-126.88 684.22,-129.63"/>
+<polygon fill="orange" stroke="orange" stroke-width="2" points="683.59,-133.08 693.9,-130.66 684.32,-126.12 683.59,-133.08"/>
+<text xml:space="preserve" text-anchor="middle" x="649.91" y="-132.86" font-family="Times,serif" font-size="14.00">eye away</text>
 </g>
 <!-- S36&#45;&gt;S17_R -->
 <g id="edge4" class="edge">
 <title>S36-&gt;S17_R</title>
-<path fill="none" stroke="green" stroke-width="2" d="M774.92,-102.6C799.63,-104.3 832.19,-106.53 859.37,-108.39"/>
-<polygon fill="green" stroke="green" stroke-width="2" points="858.98,-111.88 869.2,-109.07 859.46,-104.89 858.98,-111.88"/>
-<text xml:space="preserve" text-anchor="middle" x="823.54" y="-111.98" font-family="Times,serif" font-size="14.00">review end</text>
+<path fill="none" stroke="green" stroke-width="2" d="M774.92,-137.6C799.63,-139.3 832.19,-141.53 859.37,-143.39"/>
+<polygon fill="green" stroke="green" stroke-width="2" points="858.98,-146.88 869.2,-144.07 859.46,-139.89 858.98,-146.88"/>
+<text xml:space="preserve" text-anchor="middle" x="823.54" y="-146.98" font-family="Times,serif" font-size="14.00">review end</text>
 </g>
 <!-- S36&#45;&gt;S37 -->
-<g id="edge11" class="edge">
+<g id="edge12" class="edge">
 <title>S36-&gt;S37</title>
-<path fill="none" stroke="red" stroke-width="2" d="M697.05,-120.72C672.18,-134.33 639.43,-152.23 612.75,-166.82"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="611.11,-163.73 604.01,-171.6 614.46,-169.87 611.11,-163.73"/>
-<text xml:space="preserve" text-anchor="middle" x="618.49" y="-134.18" font-family="Times,serif" font-size="14.00">review end</text>
+<path fill="none" stroke="red" stroke-width="2" d="M697.05,-155.72C672.18,-169.33 639.43,-187.23 612.75,-201.82"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="611.11,-198.73 604.01,-206.6 614.46,-204.87 611.11,-198.73"/>
+<text xml:space="preserve" text-anchor="middle" x="618.49" y="-169.18" font-family="Times,serif" font-size="14.00">review end</text>
 </g>
 <!-- S37&#45;&gt;S8 -->
-<g id="edge7" class="edge">
+<g id="edge8" class="edge">
 <title>S37-&gt;S8</title>
-<path fill="none" stroke="orange" stroke-width="2" d="M531.63,-170.63C527.16,-166.94 522.76,-163 518.84,-159 512.74,-152.76 514.31,-148.23 507.18,-143.2 466.88,-114.75 437.72,-143.9 400.96,-111 388.14,-99.52 392.97,-88.93 382.49,-70.86"/>
-<polygon fill="orange" stroke="orange" stroke-width="2" points="385.49,-69.03 376.9,-62.83 379.74,-73.04 385.49,-69.03"/>
-<text xml:space="preserve" text-anchor="middle" x="454.07" y="-147.4" font-family="Times,serif" font-size="14.00">EVF half-press</text>
+<path fill="none" stroke="orange" stroke-width="2" d="M530.57,-205.79C526.35,-202.13 522.3,-198.16 518.84,-194 511.57,-185.24 515.66,-178.79 507.18,-171.2 469.57,-137.54 439.84,-163.19 400.96,-131 398.22,-128.73 378.97,-96.9 363.61,-71.11"/>
+<polygon fill="orange" stroke="orange" stroke-width="2" points="366.77,-69.58 358.65,-62.77 360.75,-73.15 366.77,-69.58"/>
+<text xml:space="preserve" text-anchor="middle" x="454.07" y="-175.4" font-family="Times,serif" font-size="14.00">EVF half-press</text>
 </g>
 <!-- S37&#45;&gt;S35 -->
-<g id="edge9" class="edge">
+<g id="edge10" class="edge">
 <title>S37-&gt;S35</title>
-<path fill="none" stroke="orange" stroke-width="2" d="M563.87,-170.57C563.87,-155.31 563.87,-134.79 563.87,-117.35"/>
-<polygon fill="orange" stroke="orange" stroke-width="2" points="567.37,-117.49 563.87,-107.49 560.37,-117.49 567.37,-117.49"/>
-<text xml:space="preserve" text-anchor="middle" x="552.47" y="-133.3" font-family="Times,serif" font-size="14.00">shoot</text>
+<path fill="none" stroke="orange" stroke-width="2" d="M563.87,-205.57C563.87,-190.31 563.87,-169.79 563.87,-152.35"/>
+<polygon fill="orange" stroke="orange" stroke-width="2" points="567.37,-152.49 563.87,-142.49 560.37,-152.49 567.37,-152.49"/>
+<text xml:space="preserve" text-anchor="middle" x="552.47" y="-168.3" font-family="Times,serif" font-size="14.00">shoot</text>
 </g>
 <!-- S38 -->
 <g id="node8" class="node">
 <title>S38</title>
-<polygon fill="none" stroke="black" points="772.98,-215 698.93,-215 698.93,-171 772.98,-171 772.98,-215"/>
-<text xml:space="preserve" text-anchor="middle" x="735.95" y="-202" font-family="Times,serif" font-size="10.00">S38</text>
-<text xml:space="preserve" text-anchor="middle" x="735.95" y="-190" font-family="Times,serif" font-size="10.00">Persistent Info</text>
-<text xml:space="preserve" text-anchor="middle" x="735.95" y="-178" font-family="Times,serif" font-size="10.00">LCD open</text>
+<polygon fill="none" stroke="black" points="772.98,-250 698.93,-250 698.93,-206 772.98,-206 772.98,-250"/>
+<text xml:space="preserve" text-anchor="middle" x="735.95" y="-237" font-family="Times,serif" font-size="10.00">S38</text>
+<text xml:space="preserve" text-anchor="middle" x="735.95" y="-225" font-family="Times,serif" font-size="10.00">Persistent Info</text>
+<text xml:space="preserve" text-anchor="middle" x="735.95" y="-213" font-family="Times,serif" font-size="10.00">LCD open</text>
 </g>
 <!-- S37&#45;&gt;S38 -->
-<g id="edge12" class="edge">
+<g id="edge13" class="edge">
 <title>S37-&gt;S38</title>
-<path fill="none" stroke="red" stroke-width="2" d="M601.11,-191.66C607.58,-191.47 614.27,-191.3 620.55,-191.2 646.65,-190.78 653.18,-190.78 679.27,-191.2 681.43,-191.23 683.64,-191.28 685.87,-191.33"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="685.6,-194.82 695.69,-191.58 685.78,-187.82 685.6,-194.82"/>
-<text xml:space="preserve" text-anchor="middle" x="649.91" y="-195.4" font-family="Times,serif" font-size="14.00">open LCD</text>
+<path fill="none" stroke="red" stroke-width="2" d="M601.11,-226.66C607.58,-226.47 614.27,-226.3 620.55,-226.2 646.65,-225.78 653.18,-225.78 679.27,-226.2 681.43,-226.23 683.64,-226.28 685.87,-226.33"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="685.6,-229.82 695.69,-226.58 685.78,-222.82 685.6,-229.82"/>
+<text xml:space="preserve" text-anchor="middle" x="649.91" y="-230.4" font-family="Times,serif" font-size="14.00">open LCD</text>
 </g>
 <!-- S38&#45;&gt;S37 -->
-<g id="edge13" class="edge">
+<g id="edge14" class="edge">
 <title>S38-&gt;S37</title>
-<path fill="none" stroke="red" stroke-width="2" d="M698.69,-204.24C692.28,-205.8 685.62,-207.16 679.27,-208 653.4,-211.42 646.42,-211.42 620.55,-208 618.27,-207.7 615.95,-207.33 613.61,-206.91"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="614.6,-203.54 604.09,-204.87 613.14,-210.39 614.6,-203.54"/>
-<text xml:space="preserve" text-anchor="middle" x="619.78" y="-214.77" font-family="Times,serif" font-size="14.00">close LCD</text>
+<path fill="none" stroke="red" stroke-width="2" d="M698.69,-239.24C692.28,-240.8 685.62,-242.16 679.27,-243 653.4,-246.42 646.42,-246.42 620.55,-243 618.27,-242.7 615.95,-242.33 613.61,-241.91"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="614.6,-238.54 604.09,-239.87 613.14,-245.39 614.6,-238.54"/>
+<text xml:space="preserve" text-anchor="middle" x="619.78" y="-249.77" font-family="Times,serif" font-size="14.00">close LCD</text>
 </g>
 <!-- S1 -->
 <g id="node9" class="node">
 <title>S1</title>
-<polygon fill="none" stroke="black" points="953.43,-208 872.44,-208 872.44,-172 953.43,-172 953.43,-208"/>
-<text xml:space="preserve" text-anchor="middle" x="912.94" y="-193" font-family="Times,serif" font-size="10.00">S1</text>
-<text xml:space="preserve" text-anchor="middle" x="912.94" y="-181" font-family="Times,serif" font-size="10.00">LCD Live View</text>
+<polygon fill="none" stroke="black" points="953.43,-243 872.44,-243 872.44,-207 953.43,-207 953.43,-243"/>
+<text xml:space="preserve" text-anchor="middle" x="912.94" y="-228" font-family="Times,serif" font-size="10.00">S1</text>
+<text xml:space="preserve" text-anchor="middle" x="912.94" y="-216" font-family="Times,serif" font-size="10.00">LCD Live View</text>
 </g>
 <!-- S38&#45;&gt;S1 -->
-<g id="edge14" class="edge">
+<g id="edge15" class="edge">
 <title>S38-&gt;S1</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M773.21,-192.38C798.1,-191.95 831.53,-191.38 859.33,-190.9"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="859.1,-194.41 869.04,-190.74 858.98,-187.41 859.1,-194.41"/>
-<text xml:space="preserve" text-anchor="middle" x="823.54" y="-196.23" font-family="Times,serif" font-size="14.00">DISP</text>
+<path fill="none" stroke="blue" stroke-width="2" d="M773.21,-227.38C798.1,-226.95 831.53,-226.38 859.33,-225.9"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="859.1,-229.41 869.04,-225.74 858.98,-222.41 859.1,-229.41"/>
+<text xml:space="preserve" text-anchor="middle" x="823.54" y="-231.23" font-family="Times,serif" font-size="14.00">DISP</text>
 </g>
 <!-- S1&#45;&gt;S17_R -->
-<g id="edge15" class="edge">
+<g id="edge16" class="edge">
 <title>S1-&gt;S17_R</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M912.94,-171.7C912.94,-163.51 912.94,-155.31 912.94,-147.12"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="916.44,-147.27 912.94,-137.27 909.44,-147.27 916.44,-147.27"/>
-<text xml:space="preserve" text-anchor="middle" x="882.8" y="-140.28" font-family="Times,serif" font-size="14.00">close LCD</text>
+<path fill="none" stroke="blue" stroke-width="2" d="M912.94,-206.7C912.94,-198.51 912.94,-190.31 912.94,-182.12"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="916.44,-182.27 912.94,-172.27 909.44,-182.27 916.44,-182.27"/>
+<text xml:space="preserve" text-anchor="middle" x="882.8" y="-175.28" font-family="Times,serif" font-size="14.00">close LCD</text>
 </g>
 <!-- key_expected -->
 <g id="node10" class="node">
 <title>key_expected</title>
-<text xml:space="preserve" text-anchor="middle" x="101.49" y="-186" font-family="Times,serif" font-size="10.00">green: normal shooting flow</text>
+<text xml:space="preserve" text-anchor="middle" x="101.49" y="-221" font-family="Times,serif" font-size="10.00">green: normal shooting flow</text>
 </g>
 <!-- key_info_transition -->
 <g id="node11" class="node">
 <title>key_info_transition</title>
-<text xml:space="preserve" text-anchor="middle" x="101.49" y="-240" font-family="Times,serif" font-size="10.00">orange: transition involving Info mode</text>
+<text xml:space="preserve" text-anchor="middle" x="101.49" y="-275" font-family="Times,serif" font-size="10.00">orange: transition involving Info mode</text>
 </g>
 <!-- key_info_state -->
 <g id="node12" class="node">
 <title>key_info_state</title>
-<text xml:space="preserve" text-anchor="middle" x="101.49" y="-294" font-family="Times,serif" font-size="10.00">red: persistent Info state</text>
+<text xml:space="preserve" text-anchor="middle" x="101.49" y="-329" font-family="Times,serif" font-size="10.00">red: persistent Info state</text>
 </g>
 <!-- key_recovery -->
 <g id="node13" class="node">
 <title>key_recovery</title>
-<text xml:space="preserve" text-anchor="middle" x="101.49" y="-348" font-family="Times,serif" font-size="10.00">blue: recovery path</text>
+<text xml:space="preserve" text-anchor="middle" x="101.49" y="-383" font-family="Times,serif" font-size="10.00">blue: recovery path</text>
 </g>
 </g>
 </svg>
