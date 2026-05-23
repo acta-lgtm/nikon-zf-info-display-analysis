@@ -1,11 +1,13 @@
-
 digraph B2_Extended {
-label="Figure B2-1. Case B2: Persistence and Recovery Flow of Display 5 (“Info”) During Shooting Operations";
+label="Figure B2-2. Case B2: Info Persistence, Shooting Interaction, and Fn-induced Branching";
 labelloc="t";
 labeljust="l";
 rankdir=LR;
 node [shape=box, fontsize=10];
 
+//S16 [label="S16\nWB overlay (EVF)"];
+S15 [label="S15\nWB overlay (LCD)"];
+S12 [label="S12\nWB only (no LV)"];
 
 S17_L [label="S17\nLCD Live View\nDisplay 1"];
 S17_R [label="S17\nLCD Live View\nDisplay 1"];
@@ -22,6 +24,9 @@ S36 [label="S36\nPicture Review\nLCD"];
 S37 [label="S37\nPersistent Info\nLCD docked"];
 S38 [label="S38\nPersistent Info\nLCD open"];
 S1  [label="S1\nLCD Live View"];
+
+
+
 /* --- Normal shooting flow --- */
 
 
@@ -35,9 +40,9 @@ subgraph cluster_normal {
 
     S17_L -> S8  [label="look into EVF", color="green", penwidth=2];
     S8     -> S35 [xlabel="shoot + release", color="green", penwidth=2];
-    S35    -> S36 [label="eye away", color="green", penwidth=2];
+    
     S36    -> S17_R [label="review end", color="green", penwidth=2];
-    S17_L -> S21 [xlabel="DISP → Info", color="orange", penwidth=2];
+    S17_L -> S21 [label="DISP → Info", color="orange", penwidth=2];
     
 }
 
@@ -56,10 +61,29 @@ subgraph cluster_info {
     S37 -> S35  [label="shoot", color="orange", penwidth=2];
     S35 -> S36  [label="eye away", color="orange", penwidth=2];
     S36 -> S37  [xlabel="review end", color="red", penwidth=2];
+    S38 -> S37 [label="close LCD", color="red", penwidth=2];
     S37 -> S38 [label="open LCD", color="red", penwidth=2];
-    S38 -> S37 [xlabel="close LCD", color="red", penwidth=2];
-    
+
 }
+
+
+
+/* --- Fn interaction branch --- */
+subgraph cluster_fn {
+    label="Fn Interaction Branch";
+    color="purple";
+
+//    S8  -> S16 [label="Fn hold (EVF)", color="purple", penwidth=2];
+//    S16 -> S8  [label="Fn release", color="purple", penwidth=2];
+
+    S17_L -> S15 [label="Fn hold (LCD)", color="purple", penwidth=2];
+    S15   -> S17_L [label="Fn release", color="purple", penwidth=2];
+
+    S37 -> S12 [label="Fn hold (Info)", color="orange", penwidth=2];
+    S12 -> S37 [label="Fn release", color="red", penwidth=2];
+    S35    -> S36 [label="eye away", color="green", penwidth=2];
+}
+
 
 
 
@@ -80,8 +104,9 @@ subgraph cluster_legend {
     color="gray";
 
     key_expected [label="green: normal shooting flow", shape=plaintext];
-    key_info_transition [label="orange: transition involving Info mode", shape=plaintext];
+    key_info_transition [label="orange: transition into or through Info persistence", shape=plaintext];
     key_info_state [label="red: persistent Info state", shape=plaintext];
+    key_fn [label="purple: Fn-induced overlay branch", shape=plaintext];
     key_recovery [label="blue: recovery path", shape=plaintext];
 }
 
