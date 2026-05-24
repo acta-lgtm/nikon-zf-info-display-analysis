@@ -21,12 +21,14 @@
 *   **Core Issue:**
     During shooting—especially during continuous burst—the Info display can remain persistently on the LCD, demonstrating that the information overlay logic functions independently of real-time image capture states.
 
-### Figure B2-1
+### Figure B2-1, 2
 
 ![Figure B2-1: Persistence and Recovery Flow of Display 5](../../figures/Case_B2_Figure1.svg)
 
 Source: [`Case_B2_Figure1.dot`](../../figures/Case_B2_Figure1.dot)
 
+
+This figure highlights that the persistent Info state was not merely an idle-display condition. During shooting operations, including continuous shooting, EVF Live View could appear while the shutter was half-pressed or shooting was in progress, yet the display returned to persistent Info when the eye was removed from the EVF or when picture review ended.
 
 ![Figure B2-2: Info Persistence, Shooting Interaction, and Fn-induced Branching](../../figures/Case_B2_Figure2.svg)
 
