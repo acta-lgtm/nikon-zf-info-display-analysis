@@ -6,7 +6,8 @@ labeljust="l";
 rankdir=LR;
 node [shape=box, fontsize=10];
 
-
+S37 [label="S37\nPersistent Info\nLCD docked"];
+S38 [label="S38\nPersistent Info\nLCD open"];
 S17_L [label="S17\nLCD Live View\nDisplay 1"];
 S17_R [label="S17\nLCD Live View\nDisplay 1"];
 
@@ -19,8 +20,7 @@ S21 [label="S21\nExplicit Info\n(Display 5)"];
 
 S35 [label="S35\nPicture Review\nEVF"];
 S36 [label="S36\nPicture Review\nLCD"];
-S37 [label="S37\nPersistent Info\nLCD docked"];
-S38 [label="S38\nPersistent Info\nLCD open"];
+
 S1  [label="S1\nLCD Live View"];
 /* --- Normal shooting flow --- */
 
@@ -52,6 +52,8 @@ subgraph cluster_info {
 
     S37 -> S8   [label="EVF half-press", color="orange", penwidth=2];
     S8  -> S37  [label="release + eye away", color="red", penwidth=2];
+    S8  -> S37 [label="eye away during burst", color="red", penwidth=2];
+    S37 -> S8  [label="burst / half-press + EVF", color="orange", penwidth=2];
 
     S37 -> S35  [label="shoot", color="orange", penwidth=2];
     S35 -> S36  [label="eye away", color="orange", penwidth=2];
