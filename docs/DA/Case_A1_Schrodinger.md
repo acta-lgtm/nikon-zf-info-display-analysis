@@ -75,7 +75,7 @@ Source: [`Case_A1_Figure2.dot`](../../figures/Case_A1_Figure2.dot)
 
 ---
 
-## 4. State Transition Table (Definition B)
+## 4. State Transition Table (Definition A)
 
 > [!NOTE]
 > Some states defined in this document are visually indistinguishable
