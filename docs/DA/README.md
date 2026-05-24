@@ -11,7 +11,7 @@ To maintain objectivity, each state is defined by a combination of LCD physical 
   EVF off
 
 - State S1 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   Live View displayed on the LCD monitor \
   EVF off
 
@@ -21,7 +21,7 @@ To maintain objectivity, each state is defined by a combination of LCD physical 
   EVF off
 
 - State S3 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   Menu displayed on the LCD monitor \
   EVF off
 
@@ -31,12 +31,12 @@ To maintain objectivity, each state is defined by a combination of LCD physical 
   EVF off
 
 - State S5 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   Info display with [i] menu overlay on the LCD monitor \
   EVF off
 
 - State S6 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   Info displayed on the LCD monitor \
   EVF off
 
@@ -61,7 +61,7 @@ To maintain objectivity, each state is defined by a combination of LCD physical 
   EVF off
 
 - State S11 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   Images stored on the memory card displayed on the LCD monitor \
   EVF off
 
@@ -71,17 +71,17 @@ To maintain objectivity, each state is defined by a combination of LCD physical 
   EVF off
 
 - State S13 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   White balance adjustment displayed on the LCD monitor \
   EVF off
 
 - State S14 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   Nothing displayed on the LCD monitor \
   EVF off
 
 - State S15 \
-  LCD monitor open (less than 180 degrees) \
+  LCD monitor open (20 degrees or more and 140 degrees or less) \
   Live View with the WB adjustment overlay displayed on the LCD monitor \
   EVF off
 
