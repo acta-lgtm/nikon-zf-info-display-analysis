@@ -27,8 +27,8 @@
 
 Source: [`Case_B2_Figure1.dot`](../../figures/Case_B2_Figure1.dot)
 
-
 This figure highlights that the persistent Info state was not merely an idle-display condition. During shooting operations, including continuous shooting, EVF Live View could appear while the shutter was half-pressed or shooting was in progress, yet the display returned to persistent Info when the eye was removed from the EVF or when picture review ended.
+
 
 ![Figure B2-2: Info Persistence, Shooting Interaction, and Fn-induced Branching](../../figures/Case_B2_Figure2.svg)
 
@@ -84,6 +84,17 @@ Source: [`Case_B2_Figure2.dot`](../../figures/Case_B2_Figure2.dot)
 > from one another, yet exhibit different operational behavior
 > depending on prior display-routing history and monitor context.
 
+
+> [!NOTE]
+> In the following tables, display overlays are abbreviated as
+> “DP1” through “DP5”, corresponding to the selectable display modes
+> configured under [d19 Custom monitor shooting display].
+
+> For example:
+
+> - “Live View (with DP1)” indicates Live View with Display 1 overlay.
+
+
 ### Operational Notes
 
 - Unless otherwise specified, “Open LCD monitor” refers to opening the monitor to at least 20° but less than 140° (to avoid entering self-portrait mode), while keeping the LCD active and allowing viewfinder status checks without triggering the eye sensor.
@@ -99,49 +110,49 @@ Source: [`Case_B2_Figure2.dot`](../../figures/Case_B2_Figure2.dot)
 | Step | Current State | Operation                                                                     | Next State | LCD Status                                     | EVF Status                                 | My Assessment                                | Your Assessment              |
 | :--- | :------------ | :---------------------------------------------------------------------------- | :---------- | :-------------------------------------------- | :----------------------------------------- | :------------------------------------------- | :--------------------------- |
 | Context B                                                                                                                                |            |                                                                                               |                   |                                              |                   |                              |                 |
-| 1    | S0             | Power on                                                                     | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 2    | S17            | In [PHOTO SHOOTING MENU] > [Release mode], select Continuous H, then exit    | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 3    | S17            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
-| 4    | S8             | Press the shutter button to initiate continuous release <br> for the initial five seconds, maintaining appropriate pressure throughout | S8         | Nothing display                               | Live View with the Display 1 overlay          |   E   | E / N / M |
-| 5    | S8             | Without lifting finger from the shutter button, move eye away from EVF <br> and continue continuous release for an additional five seconds. | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 6    | S17            | Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
-| 7    | S8             | Lift finger from the shutter button                                         | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
-| 8    | S8             | Move eye away from EVF                                                      | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 9    | S17            | Power off, then on                                                          | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
+| 1    | S0             | Power on                                                                     | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 2    | S17            | In [PHOTO SHOOTING MENU] > [Release mode], select Continuous H, then exit    | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 3    | S17            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
+| 4    | S8             | Press the shutter button to initiate continuous release <br> for the initial five seconds, maintaining appropriate pressure throughout | S8         | Nothing display                               | Live View (with DP1)          |   E   | E / N / M |
+| 5    | S8             | Without lifting finger from the shutter button, move eye away from EVF <br> and continue continuous release for an additional five seconds. | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 6    | S17            | Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
+| 7    | S8             | Lift finger from the shutter button                                         | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
+| 8    | S8             | Move eye away from EVF                                                      | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 9    | S17            | Power off, then on                                                          | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
 | 10   | S17            | Press DISP button repeatedly until Display 5=Info is shown                  | S21         | Info display (explicit DISP route; DP5 ON)    | Off                                        |   E   | E / N / M |
 | 11   | S21            | Power off, then on                                                          | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 12   | S37            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8         | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
-| 13   | S8             | Press the shutter button to initiate continuous release <br> for the initial five seconds, maintaining appropriate pressure throughout | S8         | Nothing display                               | Live View with the Display 1 overlay          |   E   | E / N / M |
+| 12   | S37            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8         | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
+| 13   | S8             | Press the shutter button to initiate continuous release <br> for the initial five seconds, maintaining appropriate pressure throughout | S8         | Nothing display                               | Live View (with DP1)          |   E   | E / N / M |
 | 14   | S8             | Without lifting finger from the shutter button, move eye away from EVF <br> and continue continuous release for an additional five seconds. | S37        | **Info display**                              | Off                                        | **N** | E / N / M |
-| 15   | S37            | Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
-| 16   | S8             | Lift finger from the shutter button                                          | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
+| 15   | S37            | Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
+| 16   | S8             | Lift finger from the shutter button                                          | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
 | 17   | S8             | Move eye away from EVF                                                       | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
 | 18   | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 19   | S38            | Press the DISP button                                                        | S1          | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 20   | S1             | Close LCD monitor                                                            | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 21   | S17            | In [PHOTO SHOOTING MENU] > [Release mode], select Single frame, then exit    | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 22   | S17            | In [CUSTOM SETTINGS MENU] > [c3 Power off delay] >[Picture review], select 20 s; <br> In [PLAYBACK MENU] > [Picture review], select On, then exit   | S17          | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 23   | S17            | Power off, then on                                                           | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 24   | S17            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
-| 25   | S8             | Take a photo and hold the shutter halfway, don't ease up even for a second   | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
+| 19   | S38            | Press the DISP button                                                        | S1          | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 20   | S1             | Close LCD monitor                                                            | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 21   | S17            | In [PHOTO SHOOTING MENU] > [Release mode], select Single frame, then exit    | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 22   | S17            | In [CUSTOM SETTINGS MENU] > [c3 Power off delay] >[Picture review], select 20 s; <br> In [PLAYBACK MENU] > [Picture review], select On, then exit   | S17          | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 23   | S17            | Power off, then on                                                           | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 24   | S17            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
+| 25   | S8             | Take a photo and hold the shutter halfway, don't ease up even for a second   | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
 | 26   | S8             | While holding the shutter halfway, press and hold the Fn button              | S16         | Nothing display                               | Live View with the WB adjustment overlay   |   E   | E / N / M |
-| 27   | S16            | While holding the shutter halfway, release the Fn button                     | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
+| 27   | S16            | While holding the shutter halfway, release the Fn button                     | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
 | 28   | S8             | Lift finger from the shutter button                                          | S35         | Nothing display                               | Picture Review display                     |   E   | E / N / M |
 | 29   | S35            | Wait 3 s; then move eye away from EVF                                        | S36         | Picture Review display                        | Off                                        |   E   | E / N / M |
-| 30   | S36            | Wait for the Picture Review to disappear and the next screen to appear       | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 31   | S17            | Half-press shutter button, get ready to shoot immediately                    | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 32   | S17            | Take a photo and hold the shutter halfway, don't ease up even for a second   | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
+| 30   | S36            | Wait for the Picture Review to disappear and the next screen to appear       | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 31   | S17            | Half-press shutter button, get ready to shoot immediately                    | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 32   | S17            | Take a photo and hold the shutter halfway, don't ease up even for a second   | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
 | 33   | S17            | While holding the shutter halfway, press and hold the Fn button              | S15         | Live View with the WB adjustment overlay      | Off                                        |   E   | E / N / M |
-| 34   | S15            | While holding the shutter halfway, release the Fn button                     | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
-| 35   | S17            | While holding the shutter halfway, press the DISP button                     | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
+| 34   | S15            | While holding the shutter halfway, release the Fn button                     | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
+| 35   | S17            | While holding the shutter halfway, press the DISP button                     | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
 | 36   | S17            | Lift finger from the shutter button                                          | S36         | Picture Review display                        | Off                                        |   E   | E / N / M |
-| 37   | S36            | Wait for the Picture Review to disappear                                     | S17         | Live View with the Display 1 overlay          | Off                                        |   E   | E / N / M |
+| 37   | S36            | Wait for the Picture Review to disappear                                     | S17         | Live View (with DP1)          | Off                                        |   E   | E / N / M |
 | 38   | S17            | Press DISP button repeatedly until Display 5=Info is shown                   | S21         | Info display (explicit DISP route; DP5 ON)    | Off                                        |   E   | E / N / M |
 | 39   | S21            | Power off, then on                                                           | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 40   | S37            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
-| 41   | S8             | Take a photo and hold the shutter halfway, don't ease up even for a second   | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
+| 40   | S37            | Look into the EVF, Half-press shutter button, get ready to shoot immediately | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
+| 41   | S8             | Take a photo and hold the shutter halfway, don't ease up even for a second   | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
 | 42   | S8             | While holding the shutter halfway, press and hold the Fn button              | S16         | Nothing display                               | Live View with the WB adjustment overlay   |   E   | E / N / M |
-| 43   | S16            | While holding the shutter halfway, release the Fn button                     | S8          | Nothing display                               | Live View with the Display 1 overlay       |   E   | E / N / M |
+| 43   | S16            | While holding the shutter halfway, release the Fn button                     | S8          | Nothing display                               | Live View (with DP1)       |   E   | E / N / M |
 | 44   | S8             | Lift finger from the shutter button                                          | S35         | Nothing display                               | Picture Review display                     |   E   | E / N / M |
 | 45   | S35            | Wait 3 s; Move eye away from EVF                                             | S36         | Picture Review display                        | Off                                        |   E   | E / N / M |
 | 46   | S36            | Wait for the Picture Review to disappear                                     | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
@@ -179,3 +190,4 @@ under at least some tested conditions:
   [CUSTOM SETTINGS MENU] >
   [d19 Custom monitor shooting display]
 - Initializing camera settings
+
