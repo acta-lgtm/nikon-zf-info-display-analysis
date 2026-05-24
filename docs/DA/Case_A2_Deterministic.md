@@ -64,7 +64,7 @@ This figure focuses on the first half of Case A2, where Info-display persistence
 > For details on the evaluation ratings (E / N / M), please refer to the [Assessment Codes](../../README.md#assessment-codes) in the main README.
 ---
 
-## 4. State Transition Table
+## 4. State Transition Table (Definition A)
 
 
 > [!NOTE]
