@@ -142,9 +142,15 @@ Ultimately, this repository is not merely a collection of transition tables, but
 - **N** = Not Expected
 - **M** = Mechanically consistent, but operationally Not Expected
 
-The term "Expected" refers to behavior expected from the currently active display and shooting context as observed from the user's perspective.
+The assessment labels used in this repository are primarily based on operational expectations historically associated with Nikon DSLR cameras, particularly the long-established behavior in which half-pressing the shutter button immediately restores a shooting-ready state from the Info display.
 
-These assessments are observational and operational in nature, and do not imply conclusions regarding internal firmware intent.
+These assessments therefore reflect practical shooting responsiveness and user-observable operational consistency, rather than assumptions regarding internal firmware implementation.
+
+This repository does not assume that DSLR-era behavior necessarily represents the only correct design philosophy.
+
+However, the currently observed Display 5 persistence behavior — including the inability to reliably exit via half-press in some contexts, as well as the continuous Info display observed during burst shooting operations in Case B2 — also appears open to discussion from the standpoint of shooting responsiveness and display-state consistency.
+
+It is hoped that these observations may contribute to further discussion regarding the operational semantics of Display 5 ("Info") in Nikon Z-series cameras.
 
 
 
