@@ -23,7 +23,31 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 - Logical analysis of "display priority" and "state persistence" occurring under specific operational conditions.
 - A study on the coexistence of legacy and modern architectures within the system.
 
-### 1.2 Observed Phenomena 
+### 1.2 Historical Context
+
+DSLR era manuals explicitly documented how to dismiss the Info screen.
+Around the launch period of the Z system (2018), those descriptions disappeared from Nikon manuals.
+Meanwhile, actual device behavior diverged:
+some DSLR models (e.g., D6) still behaved according to the older “temporary Info” semantics,
+while Z-series cameras increasingly treated “Info” (Display 5) as a persistent display state.
+
+Another historically significant transition was the disappearance of the dedicated “Info” button in Nikon mirrorless cameras.
+In DSLR-era cameras, the Info display was typically accessed through a dedicated button (“INFO” or “R”), reinforcing its role as a temporary information screen that could be dismissed independently.
+With the introduction of the Z system, the Info display became integrated into the DISP display-cycle system (“Display 5”), potentially changing its conceptual role from a transient overlay to a persistent display state.
+
+
+| Era       | Info access method                     | Manual                                         | Actual behavior        |
+| --------- | -------------------------------------- | ---------------------------------------------- | ---------------------- |
+| D3–D3500  | Dedicated INFO/R button                | “Info can be turned off” explicitly documented | half-press clears Info |
+| Z7/Z6     | Integrated into DISP cycle (Display 5) | documentation removed                          | unknown                |
+| D780      | Dedicated INFO/R button                | documentation removed                          | unknown                |
+| D6        | Dedicated INFO/R button                | documentation removed                          | half-press still works |
+| Z9/Z8/Zf  | Integrated into DISP cycle (Display 5) | documentation removed                          | Display5 persistence   |
+
+This repository does not attempt to infer Nikon’s internal design intentions.
+However, the observed transition in documentation and device behavior appears to coincide with the introduction of the Z system and may be historically significant.
+
+### 1.3 Observed Phenomena 
 
 * **Display Priority Persistence:** The "Information Display (Info)" appears to preempt or retain display priority over other operational displays under certain conditions.
 * **Recovery Path Removal Through Configuration:** Certain customizations can make standard UI-level recovery paths inaccessible without any explicit system warning.
@@ -31,12 +55,12 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 * **Inconsistency of Internal States:** Even when the visual appearance remains identical, the system's response (output) to inputs varies depending on past display history.
 * **Persistent Info Display Under Specific Modes:** Under specific conditions such as continuous shooting mode, the "Information Display (Info)" persistently occupies the entire LCD when the user's eye is removed from the viewfinder.
 
-### 1.3 Target Environment
+### 1.4 Target Environment
 
 - **Device:** Nikon Z f
 - **Firmware:** [ C: Ver. 3.01 ]
 
-### 1.4 Notes on the Observation Process
+### 1.5 Notes on the Observation Process
 
 The cases in this repository were developed chronologically through observation, rather than from a predefined state model.
 
