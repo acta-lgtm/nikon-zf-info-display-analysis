@@ -1,18 +1,17 @@
-# nikon-zf-info-display-analysis
+# An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
-## Analysis of Nikon Z f State Transitions: "Info" Display Logic
-
-This repository documents the results of analyzing the state transitions observed on my personal Nikon Z f.
+Originally initiated as an investigation into unusual “Info” persistence on my personal Nikon Z f, this repository gradually expanded into a broader observational analysis of Display 5 (“Info”) behavior across Nikon Z-series cameras.
 
 With this particular camera, pressing the shutter button halfway at times failed to immediately ready the camera for shooting. This behavior can depart from a photographer’s natural expectations and may lead to missed photo opportunities.
 Furthermore, under default settings, the LCD could remain locked on the Information Display even during continuous shooting. To uncover the specific triggering conditions and identify potential workarounds, I conducted detailed behavioral observations.
 
 I hypothesize that the phenomena observed here are closely tied to the "Information Display (Info)"—a feature inherited from the D-series DSLRs—and may represent a visible manifestation of the coexistence between legacy and modern system logic.
- While this camera boasts a heritage design, it appears to attempt a fusion between legacy hardware and modern systems not just on the surface, but deep within its internal logic.
+
 
 Although I am a complete layman in the field of systems engineering, I hold a deep interest in user interfaces and the integration of legacy and modern technology. I share this report in the hope that it will spark meaningful discussions among experts and specialists in the community.
 
 As this analysis was conducted independently by a non-specialist, some terminology or interpretations may be incomplete.
+
 
 ---
 
