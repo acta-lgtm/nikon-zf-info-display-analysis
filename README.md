@@ -25,16 +25,17 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 
 ### 1.2 Historical Context
 
-DSLR era manuals explicitly documented how to dismiss the Info screen.
-Around the launch period of the Z system (2018), those descriptions disappeared from Nikon manuals.
-Meanwhile, actual device behavior diverged:
-some DSLR models (e.g., D6) still behaved according to the older “temporary Info” semantics,
-while Z-series cameras increasingly treated “Info” (Display 5) as a persistent display state.
+The “Info” display in Nikon cameras historically functioned as a temporary shooting-information screen.
 
-Another historically significant transition was the disappearance of the dedicated “Info” button in Nikon mirrorless cameras.
-In DSLR-era cameras, the Info display was typically accessed through a dedicated button (“INFO” or “R”), reinforcing its role as a temporary information screen that could be dismissed independently.
-With the introduction of the Z system, the Info display became integrated into the DISP display-cycle system (“Display 5”), potentially changing its conceptual role from a transient overlay to a persistent display state.
+Introduced prominently during the DSLR era (e.g., Nikon D3 generation), the Info display was accessed via a dedicated “INFO” button and Nikon manuals explicitly documented how to dismiss the screen, including:
+- half-pressing the shutter button,
+- pressing the INFO/R button again,
+- or waiting for timeout.
 
+This behavior and terminology remained consistently documented through multiple DSLR generations.
+
+However, beginning around the launch period of the Nikon Z system (2018), explicit documentation describing how to dismiss the Info display disappeared from Nikon manuals.
+At the same time, mirrorless Z-series cameras integrated the former Info display into the DISP display-cycle system (“Display 5”).
 
 | Era       | Info access method                     | Manual                                         | Actual behavior        |
 | --------- | -------------------------------------- | ---------------------------------------------- | ---------------------- |
